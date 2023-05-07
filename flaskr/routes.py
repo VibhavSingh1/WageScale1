@@ -8,12 +8,12 @@ from flaskr import definitions as constants
 @app.route(constants.URL_HOME_2) # /index
 @app.route(constants.URL_HOME_3) # /home
 def index():
-    return render_template(constants.TEMPLATE_NAME_HOME)
+    return render_template(constants.TEMPLATE_NAME_HOME, index=True)
 
 
 @app.route(constants.URL_ABOUT) # /about
 def about():
-    return render_template(constants.TEMPLATE_NAME_ABOUT)
+    return render_template(constants.TEMPLATE_NAME_ABOUT, about=True)
 
 
 @app.route("/static/images/<filename>")
