@@ -5,9 +5,9 @@
         font-weight: bold;
         font-style: normal;
         font-size: 65px;
-		font-smooth: 100;
+		    font-smooth: 100;
         line-height: 1.5;
-		text-shadow: 2px 2px 2px rgb(36, 36, 36);
+		    text-shadow: 2px 2px 2px rgb(36, 36, 36);
         color: black;
 
     }
@@ -18,8 +18,8 @@
     .header2{
         font-size: 55px;
         line-height: 0;
-		font-weight: bold;
-    }
+		    font-weight: bold;
+      }
 
 	.nav-link-cust{
 		font-size: 30px;
@@ -27,7 +27,7 @@
 </style>
 
 <div>
-  <nav class="navbar navbar-expand-sm " style="background-color: rgb(254, 254, 254);">
+  <nav class="navbar navbar-expand-sm ">
     <div class="container-fluid">
 
   		<a class="navbar-brand head-button ps-3 pb-3 pt-0" href="{{ url_for('index') }}">
@@ -42,15 +42,15 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto nav-link-cust">
           <li class="nav-item ps-4 ms-auto me-3" >
-            <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
+            <a class="nav-link {% if index==true %} active {% endif %}" aria-current="page" href="{{ url_for('index') }}">Home</a>
           </li>
 
           <li class="nav-item ps-4 ms-auto me-3">
-            <a class="nav-link" href="{{ url_for('about') }}">About Us</a>
+            <a class="nav-link {% if about %} active {% endif %} " href="{{ url_for('about') }}">About Us</a>
           </li>
 
           <li class="nav-item ps-4 ms-auto me-3">
-            <a class="nav-link" href="{{ url_for('about') }}">Services</a>
+            <a class="nav-link {% if about %} active {% endif %} " href="{{ url_for('about') }}">Services</a>
           </li>
         </ul>
       </div>
