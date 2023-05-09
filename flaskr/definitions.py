@@ -13,7 +13,7 @@ IMAGES_DIR_NAME = "images"
 CSS_DIR_NAME = "css"
 
 
-TEMPLATE_NAME_HOME = "index.html" # home, index, / 
+TEMPLATE_NAME_HOME = "index.html"  # home, index, /
 TEMPLATE_NAME_ABOUT = "about.html"
 
 BACKGROUND_IMG_NAME = "background1.jpg"
@@ -27,22 +27,21 @@ TEMPLATE_DIR_PATH = os.path.join(
     TEMPLATE_NAME,
 )
 
-BACKGROUND_IMG_PATH = os.path.join(
-    STATIC_DIR_NAME,
-    IMAGES_DIR_NAME,
-    BACKGROUND_IMG_NAME,
-)
+# BACKGROUND_IMG_PATH = os.path.join(
+#     STATIC_DIR_NAME,
+#     IMAGES_DIR_NAME,
+#     BACKGROUND_IMG_NAME,
+# )
 
-
-# FRONTEND ######################################################################
-# Page names
-PAGE_ABOUT = "about"
-PAGE_HOME = "home"
-PAGE_INDEX = "index"
+# # FRONTEND ######################################################################
+# # Page names
+# PAGE_ABOUT = "about"
+# PAGE_HOME = "home"
+# PAGE_INDEX = "index"
 
 # Page URLs
-URL_HOME_1 = "/"
-URL_HOME_2 = urljoin(URL_HOME_1, PAGE_INDEX)
-URL_HOME_3 = urljoin(URL_HOME_1, PAGE_HOME)
-URL_ABOUT = urljoin(URL_HOME_1, PAGE_ABOUT)
-URL_BACKGROUND_IMG = urljoin(URL_HOME_1, BACKGROUND_IMG_PATH)
+# URL_HOME_1 = "/"
+# URL_HOME_2 = urljoin(URL_HOME_1, PAGE_INDEX)
+# URL_HOME_3 = urljoin(URL_HOME_1, PAGE_HOME)
+# URL_ABOUT = urljoin(URL_HOME_1, PAGE_ABOUT)
+# URL_BACKGROUND_IMG = urljoin(URL_HOME_1, BACKGROUND_IMG_PATH)
