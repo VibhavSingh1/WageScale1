@@ -1,0 +1,240 @@
+2023-05-14 13:13:50 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-14 13:13:50 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-14 13:13:50 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:13:50 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:13:50 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:13:59 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 13:13:59] "GET / HTTP/1.1" 200 -
+2023-05-14 13:13:59 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 13:13:59] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-05-14 13:13:59 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 13:13:59] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-05-14 13:13:59 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 13:13:59] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-14 13:20:57 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:20:57 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:20:57 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:20:57 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:21:00 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:21:00 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:21:00 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:21:00 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:21:09 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:21:09 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:21:16 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:21:16 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:21:16 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:21:17 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:21:17 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:21:17 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:21:17 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:21:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:21:43 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:21:50 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:21:56 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:21:56 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:21:56 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:22:33 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:22:33 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:22:33 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:22:33 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:22:35 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:22:35 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:22:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:22:52 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:23:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:23:04 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:23:04 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:23:09 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:23:09 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:23:12 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:23:12 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:23:12 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:24:02 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:24:02 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:24:06 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:24:06 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:24:06 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:24:15 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:24:15 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:24:15 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:24:15 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:24:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:24:19 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:24:19 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:24:19 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:24:20 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:24:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:24:20 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:24:20 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 13:24:25 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-14 13:24:26 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:24:27 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:24:29 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 13:24:29 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 13:24:29 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:05:46 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-14 14:05:46 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:05:46 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:05:46 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:14:08 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/__init__.py', reloading
+2023-05-14 14:14:08 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:14:09 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:14:09 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:14:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/__init__.py', reloading
+2023-05-14 14:14:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:14:10 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:14:10 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:14:13 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/config.py', reloading
+2023-05-14 14:14:13 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:14:13 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:14:13 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:33:12 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-14 14:33:12 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-14 14:33:12 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:33:12 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:33:12 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:33:20 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 14:33:20] "GET / HTTP/1.1" 200 -
+2023-05-14 14:33:20 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 14:33:20] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-14 14:33:20 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 14:33:20] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-14 14:33:52 - flaskr - ERROR - An error occurred (status code: 404): 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2023-05-14 14:33:52 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 14:33:52] "[33mGET /0 HTTP/1.1[0m" 404 -
+2023-05-14 14:34:12 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:34:12 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:34:12 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:34:12 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:34:16 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:34:16 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:34:16 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:34:16 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:34:18 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:34:18 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:34:18 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:34:18 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:34:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:34:22 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:34:22 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:34:22 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:34:25 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:34:25 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:34:25 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:34:25 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:34:29 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:34:29 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:34:29 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:34:29 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:34:32 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:34:32 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:34:36 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:34:36 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:34:36 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:34:38 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:34:38 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:34:38 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:34:38 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:34:41 - flaskr - ERROR - An error occurred (status code: 404): 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2023-05-14 14:34:41 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 14:34:41] "[33mGET /0 HTTP/1.1[0m" 404 -
+2023-05-14 14:34:41 - flaskr - ERROR - An error occurred (status code: 404): 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2023-05-14 14:34:41 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 14:34:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-05-14 14:34:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:34:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:34:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:34:55 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:34:56 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:34:56 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:34:56 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:34:56 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:35:00 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:35:00 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:35:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:35:02 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:35:02 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:35:06 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:35:06 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:35:06 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:35:06 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:35:13 - flaskr - ERROR - An error occurred (status code: 404): 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2023-05-14 14:35:13 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 14:35:13] "[33mGET /0 HTTP/1.1[0m" 404 -
+2023-05-14 14:35:21 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:35:21 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:35:21 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:35:21 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:35:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:35:22 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:35:23 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:35:23 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:35:29 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 14:35:29] "GET / HTTP/1.1" 200 -
+2023-05-14 14:37:17 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:37:17 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:37:21 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:37:21 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 14:37:21 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 14:38:14 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 14:38:14 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:38:16 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:38:18 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:38:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:38:35 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:38:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 14:38:39 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:23:32 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-14 15:23:32 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-14 15:23:32 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:23:32 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 15:23:32 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 15:23:58 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:23:58] "GET / HTTP/1.1" 200 -
+2023-05-14 15:23:58 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:23:58] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-14 15:23:58 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:23:58] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-14 15:24:01 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:24:01] "[33mGET /.a HTTP/1.1[0m" 404 -
+2023-05-14 15:24:07 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:24:07] "GET / HTTP/1.1" 200 -
+2023-05-14 15:24:07 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:24:07] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-05-14 15:24:14 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:24:14] "[33mGET /aas HTTP/1.1[0m" 404 -
+2023-05-14 15:24:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/errorhandler.py', reloading
+2023-05-14 15:24:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:24:37 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 15:24:37 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 15:24:39 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/errorhandler.py', reloading
+2023-05-14 15:24:39 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:24:39 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 15:24:39 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 15:24:41 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/errorhandler.py', reloading
+2023-05-14 15:24:41 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:24:42 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 15:24:42 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 15:24:44 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:24:44] "[33mGET /aas HTTP/1.1[0m" 404 -
+2023-05-14 15:24:55 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:24:55] "[33mGET /aasas HTTP/1.1[0m" 404 -
+2023-05-14 15:25:18 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 15:25:18 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:25:22 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:25:22 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 15:25:22 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 15:25:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 15:25:24 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:25:45 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:25:45 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 15:25:45 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 15:25:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 15:25:48 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:25:53 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:25:53 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 15:25:53 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 15:25:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-05-14 15:25:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:25:55 - werkzeug - INFO -  * Restarting with stat
+2023-05-14 15:25:56 - werkzeug - WARNING -  * Debugger is active!
+2023-05-14 15:25:56 - werkzeug - INFO -  * Debugger PIN: 102-330-895
+2023-05-14 15:26:26 - flaskr - ERROR - HTTPException: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/werkzeug/routing/map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2023-05-14 15:26:26 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:26:26] "[33mGET /aasas HTTP/1.1[0m" 404 -
+2023-05-14 15:27:57 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:27:57] "GET / HTTP/1.1" 200 -
+2023-05-14 15:27:57 - werkzeug - INFO - 127.0.0.1 - - [14/May/2023 15:27:57] "GET /static/images/favicon1.ico HTTP/1.1" 200 -

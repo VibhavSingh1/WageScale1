@@ -1,6 +1,7 @@
 import os
-
-from flask import *
+from flaskr import app
+from flask import render_template, Blueprint, make_response, send_file
+import flaskr.web.errorhandler
 
 bp_web = Blueprint(
     "web_routes",
@@ -35,3 +36,6 @@ def some_resource(filename):
     response = make_response(send_file(filename))
     response.headers["Cache-Control"] = "max-age=300"
     return response
+
+
+
