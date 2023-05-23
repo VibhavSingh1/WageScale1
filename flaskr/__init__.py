@@ -19,8 +19,9 @@ app.register_blueprint(bp_web)
 app.config.from_object(DevelopmentConfig)
 
 # Configuring logger
-if not os.path.isdir(constants.LOG_TODAY_DIR):
-    os.mkdir(constants.LOG_TODAY_DIR)
+if not os.path.exists(constants.LOG_TODAY_DIR):
+    os.makedirs(constants.LOG_TODAY_DIR)
+
 logging.config.dictConfig(app.config["LOGGING"])
 
 

@@ -1,0 +1,2047 @@
+2023-05-23 00:28:27 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-23 00:28:27 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-23 00:28:27 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:28:27 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:28:27 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:28:33 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:28:33] "GET / HTTP/1.1" 200 -
+2023-05-23 00:28:33 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:28:33] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 00:28:33 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:28:33] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-05-23 00:28:36 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:28:37 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 00:28:38 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:28:40 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 00:28:41 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:28:42 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 00:28:43 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:28:43] "GET /about HTTP/1.1" 200 -
+2023-05-23 00:29:08 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:29:08 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:29:09 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:29:09 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:29:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:29:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:29:11 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:29:11 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:29:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:29:19 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:29:19 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:29:19 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:29:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:29:24 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:29:24 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:29:24 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:29:31 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:29:31 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:29:32 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:29:32 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:29:35 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:29:35 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:29:36 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:29:36 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:29:38 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:29:38 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:29:39 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:29:39 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:29:42 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:29:42 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:29:42 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:29:42 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:29:50 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:29:50 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:29:50 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:29:50 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:29:57 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:29:58 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019-2022 HTTP/1.1" 200 102
+2023-05-23 00:29:58 - flaskr - ERROR - Unhandled Exception: 'pages'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 29, in _get_ppp_data
+    all_data = self._request_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 56, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 257, in call
+    return attempt.get(self._wrap_exception)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 301, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/six.py", line 719, in reraise
+    raise value
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 251, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 74, in _request_ppp_data
+    total_pages = data[0]["pages"]
+KeyError: 'pages'
+2023-05-23 00:29:58 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:29:58] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 00:33:14 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:33:15 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:33:15 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:33:15 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:33:18 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:33:18 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:33:19 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:33:19 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:33:21 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:33:21 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:33:26 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:33:26 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:33:26 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:33:33 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:33:33 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:33:34 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:33:34 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:33:42 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:33:44 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019-2022 HTTP/1.1" 200 102
+2023-05-23 00:33:44 - flaskr - ERROR - Unhandled Exception: 'pages'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 29, in _get_ppp_data
+    all_data = self._request_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 56, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 257, in call
+    return attempt.get(self._wrap_exception)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 301, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/six.py", line 719, in reraise
+    raise value
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 251, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 74, in _request_ppp_data
+    total_pages = data[0]["pages"]
+KeyError: 'pages'
+2023-05-23 00:33:44 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:33:44] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 00:35:59 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:35:59 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:36:00 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:36:00 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:36:02 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:36:02 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:36:03 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:36:03 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:36:24 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:36:24 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:36:26 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:36:45 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:36:46 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:36:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:36:52 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:37:00 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:39:26 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:39:27 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:39:35 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:39:39 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:39:44 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:39:47 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:39:48 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:39:48 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:39:50 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:39:50 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:39:51 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:39:51 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:39:58 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:39:58 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:39:58 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:39:58 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:40:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:40:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:40:01 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:40:01 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:40:08 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:40:09 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019-2022 HTTP/1.1" 200 102
+2023-05-23 00:40:09 - flaskr - ERROR - Unhandled Exception: no exception for KeyError('pages')
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 30, in _get_ppp_data
+    all_data = self._request_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 56, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 257, in call
+    return attempt.get(self._wrap_exception)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 301, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/six.py", line 719, in reraise
+    raise value
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 251, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 77, in _request_ppp_data
+    total_pages = data[0]["pages"]
+KeyError: 'pages'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 34, in _get_ppp_data
+    abort(exc)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/helpers.py", line 310, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/werkzeug/exceptions.py", line 862, in __call__
+    raise LookupError(f"no exception for {code!r}")
+LookupError: no exception for KeyError('pages')
+2023-05-23 00:40:09 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:40:09] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 00:43:32 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:43:32 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:43:33 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:43:33 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:43:34 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:43:34 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:43:34 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:43:34 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:43:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:43:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:43:38 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:43:38 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:43:39 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:43:39 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:43:40 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:43:40 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:43:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:43:48 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:43:49 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:43:49 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:44:07 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:44:08 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019-2022 HTTP/1.1" 200 102
+2023-05-23 00:44:08 - flaskr - ERROR - Unhandled Exception: local variable 'all_data' referenced before assignment
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 37, in _get_ppp_data
+    for record in all_data:
+UnboundLocalError: local variable 'all_data' referenced before assignment
+2023-05-23 00:44:08 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:44:08] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 00:46:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:46:24 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:46:24 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:46:24 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:46:34 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:46:35 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019-2022 HTTP/1.1" 200 102
+2023-05-23 00:46:35 - flaskr - ERROR - Unhandled Exception: local variable 'all_data' referenced before assignment
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 37, in _get_ppp_data
+    for record in all_data:
+UnboundLocalError: local variable 'all_data' referenced before assignment
+2023-05-23 00:46:35 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:46:35] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 00:50:16 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:50:16 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:50:17 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:50:17 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:50:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:50:19 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:50:20 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:50:20 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:50:31 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:50:32 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019-2022 HTTP/1.1" 200 102
+2023-05-23 00:50:32 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:50:32] "GET /about HTTP/1.1" 200 -
+2023-05-23 00:50:32 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:50:32] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 00:50:32 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:50:32] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-23 00:52:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/errorhandler.py', reloading
+2023-05-23 00:52:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:52:10 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:52:10 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:52:15 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/errorhandler.py', reloading
+2023-05-23 00:52:15 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:52:15 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:52:15 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:52:16 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/errorhandler.py', reloading
+2023-05-23 00:52:16 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:52:17 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:52:17 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:52:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:52:23 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019-2022 HTTP/1.1" 200 102
+2023-05-23 00:52:23 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:52:23] "GET /about HTTP/1.1" 200 -
+2023-05-23 00:52:23 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:52:23] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-05-23 00:52:45 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:52:45 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:52:45 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:52:45 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:52:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:52:50 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019-2022 HTTP/1.1" 200 102
+2023-05-23 00:52:50 - flaskr - ERROR - Unhandled Exception: 'pages'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 30, in _get_ppp_data
+    all_data = self._request_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 56, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 257, in call
+    return attempt.get(self._wrap_exception)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 301, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/six.py", line 719, in reraise
+    raise value
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 251, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 78, in _request_ppp_data
+    total_pages = data[0]["pages"]
+KeyError: 'pages'
+2023-05-23 00:52:50 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:52:50] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 00:53:41 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:53:41 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:53:42 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:53:42 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:53:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:53:43 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:53:44 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:53:44 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:53:49 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/errorhandler.py', reloading
+2023-05-23 00:53:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:53:50 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:53:50 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:54:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:54:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:54:11 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:54:11 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:54:13 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:54:14 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 00:54:15 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:56:27 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 00:56:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 00:56:30 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 00:56:30 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:56:30] "GET /about HTTP/1.1" 200 -
+2023-05-23 00:56:30 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:56:30] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 00:56:30 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 00:56:30] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-05-23 00:58:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 00:58:44 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 00:58:44 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 00:58:44 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 00:58:48 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 01:01:00 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 01:01:01 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 01:02:29 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 01:02:29 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 01:02:30 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 01:02:30 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 01:02:30 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 01:02:30] "GET /about HTTP/1.1" 200 -
+2023-05-23 01:02:30 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 01:02:30] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 01:02:30 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 01:02:30] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-23 01:02:34 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 01:02:34 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 01:02:35 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 01:02:35 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 01:02:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 01:02:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 01:02:38 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 01:02:38 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 01:03:07 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 01:03:07 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 01:03:08 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 01:03:08 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 01:03:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 01:03:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 01:03:11 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 01:03:11 - werkzeug - INFO -  * Debugger PIN: 119-842-648
+2023-05-23 01:03:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 01:05:34 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 01:05:35 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 01:07:47 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 01:07:48 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 01:07:50 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 01:07:50 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 01:07:50] "GET /about HTTP/1.1" 200 -
+2023-05-23 01:07:50 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 01:07:50] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 01:07:50 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 01:07:50] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-23 01:08:54 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 01:08:54] "GET /home HTTP/1.1" 200 -
+2023-05-23 01:08:54 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 01:08:54] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-05-23 21:00:31 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-23 21:00:31 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-23 21:00:31 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:00:31 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:00:31 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:00:39 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:00:39] "GET / HTTP/1.1" 200 -
+2023-05-23 21:00:39 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:00:39] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-05-23 21:00:40 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:00:40] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 21:00:40 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:00:40] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-05-23 21:00:42 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:00:44 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 21:00:44 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:00:46 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 21:00:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:00:49 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 21:00:49 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:00:49] "GET /about HTTP/1.1" 200 -
+2023-05-23 21:00:58 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:00:58] "GET /home HTTP/1.1" 200 -
+2023-05-23 21:00:58 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:00:58] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-05-23 21:00:59 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:01:01 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 21:01:02 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:01:03 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 21:01:04 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:01:06 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 21:01:06 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:01:06] "GET /about HTTP/1.1" 200 -
+2023-05-23 21:03:20 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-23 21:03:20 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-23 21:03:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:03:20 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:03:20 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:03:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:03:24 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 21:03:25 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:03:27 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 21:03:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:03:29 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 21:03:29 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:03:29] "GET /about HTTP/1.1" 200 -
+2023-05-23 21:26:16 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:26:16 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:26:17 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:26:17 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:26:24 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:26:24 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:26:25 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:26:25 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:26:27 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:26:27 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:26:28 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:26:28 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:26:31 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:26:32 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 21:26:33 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:26:34 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 21:26:35 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:26:37 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 21:26:37 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:26:37] "GET /about HTTP/1.1" 200 -
+2023-05-23 21:26:37 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:26:37] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 21:26:37 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:26:37] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-23 21:26:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:26:48 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:26:49 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:26:49 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:26:55 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:26:55 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:26:56 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:26:56 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:27:26 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:27:27 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 21:27:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:27:30 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 21:27:31 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:27:33 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 21:27:33 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:27:33] "GET /about HTTP/1.1" 200 -
+2023-05-23 21:28:12 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:28:12 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:28:13 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:28:13 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:28:32 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:28:32 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:28:33 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:28:33 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:28:34 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:28:34 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:28:35 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:28:35 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:28:40 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:28:40 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:28:43 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:28:47 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:28:58 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:29:00 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:29:52 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:29:52 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:29:52 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:29:55 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:29:55 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:30:17 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:30:18 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:30:18 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:30:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:30:19 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:30:19 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:30:19 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:31:40 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:31:40 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:31:45 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:31:46 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:31:46 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:31:49 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:31:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:32:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:32:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:32:14 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:32:16 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:32:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:32:23 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:32:23 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:32:27 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:32:28 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:32:28 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:32:28 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:32:36 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:32:36 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:32:37 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:32:37 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:33:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:33:01 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 21:33:02 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:33:04 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 21:33:05 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:33:06 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 21:33:06 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:33:06] "GET /about HTTP/1.1" 200 -
+2023-05-23 21:33:06 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:33:06] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 21:33:06 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:33:06] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-23 21:34:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:34:11 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 21:34:12 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:34:14 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 21:34:14 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:34:16 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 21:34:16 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:34:16] "GET /about HTTP/1.1" 200 -
+2023-05-23 21:35:25 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:35:25 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:35:26 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:35:26 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:35:31 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:35:31 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:35:31 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:35:31 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:35:33 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:35:35 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 21:35:36 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:35:37 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 21:35:38 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:35:39 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 21:35:39 - flaskr - ERROR - HTTPException: 400 Bad Request: No ppp data recieved from api
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 37, in _get_ppp_data
+    raise e
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 35, in _get_ppp_data
+    raise err
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 33, in _get_ppp_data
+    abort(400, "No ppp data recieved from api")
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/helpers.py", line 310, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/werkzeug/exceptions.py", line 864, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.BadRequest: 400 Bad Request: No ppp data recieved from api
+2023-05-23 21:35:39 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:35:39] "[31m[1mGET /about HTTP/1.1[0m" 400 -
+2023-05-23 21:36:14 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:36:14 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:36:15 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:36:15 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:36:21 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:36:21 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:36:22 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:36:22 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:36:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:36:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:36:24 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:36:24 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:36:25 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:36:27 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019-2022 HTTP/1.1" 200 102
+2023-05-23 21:36:27 - flaskr - ERROR - Unhandled Exception: 'pages'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 37, in _get_ppp_data
+    raise e
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 30, in _get_ppp_data
+    all_data = self._request_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 56, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 257, in call
+    return attempt.get(self._wrap_exception)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 301, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/six.py", line 719, in reraise
+    raise value
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/retrying.py", line 251, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 80, in _request_ppp_data
+    total_pages = data[0]["pages"]
+KeyError: 'pages'
+2023-05-23 21:36:27 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:36:27] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 21:37:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:37:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:37:05 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:37:05 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:41:55 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:41:55 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:41:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:41:55 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:42:31 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:42:31 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:42:32 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:42:32 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:42:46 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:42:46 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:42:47 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:42:47 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:43:29 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:43:29 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:43:30 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:43:30 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:43:52 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:43:52 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:43:53 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:43:53 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:44:20 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:44:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:44:21 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:44:22 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:44:22 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:44:26 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:44:26 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:44:26 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:44:26 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:44:27 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:44:28 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:44:28 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:44:28 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:44:47 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:44:47 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:44:48 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:44:49 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:44:49 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:44:50 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:44:50 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:44:50 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:44:50 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:45:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:45:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:45:08 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:45:09 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:45:11 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:45:11 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:45:11 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:45:13 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:45:13 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:45:14 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:45:14 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:45:40 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:45:40 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:45:40 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:45:40 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:45:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:45:43 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:45:44 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:45:44 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:45:47 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:45:47 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:45:48 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:45:48 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:45:50 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:45:50 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:45:51 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:45:51 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:46:07 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:46:07 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:46:08 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:46:08 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:46:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:48:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:48:20 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 21:48:21 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:50:21 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022 HTTP/1.1" 200 237340
+2023-05-23 21:50:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:50:34 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 21:50:35 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:52:34 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=1 HTTP/1.1" 200 237340
+2023-05-23 21:52:35 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:52:37 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 21:52:37 - flaskr - ERROR - 400 Bad Request: No ppp data recieved from api
+2023-05-23 21:52:37 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:52:37] "GET /about HTTP/1.1" 200 -
+2023-05-23 21:52:37 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:52:37] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 21:52:37 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:52:37] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-23 21:52:47 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=1000&date=2019%3A2022&page=2 HTTP/1.1" 200 15208
+2023-05-23 21:52:47 - flaskr - ERROR - 400 Bad Request: No ppp data recieved from api
+2023-05-23 21:52:47 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:52:47] "GET /about HTTP/1.1" 200 -
+2023-05-23 21:52:52 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:52:52 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:52:53 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:52:53 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:53:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:53:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:53:07 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:53:08 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:53:08 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:53:44 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:53:44 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:53:45 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:53:45 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:53:49 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:53:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:54:06 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:54:06 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:54:06 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:54:20 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:54:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:54:20 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:54:20 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:54:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:54:30 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 21:54:31 - flaskr - ERROR - 400 Bad Request: No ppp data recieved from api
+2023-05-23 21:54:31 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:54:31] "GET /about HTTP/1.1" 200 -
+2023-05-23 21:54:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:54:49 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 21:54:49 - flaskr - ERROR - 400 Bad Request: No ppp data recieved from api
+2023-05-23 21:54:49 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:54:49] "GET /about HTTP/1.1" 200 -
+2023-05-23 21:55:29 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:55:29 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:55:29 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:55:29 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:55:30 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:55:30 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:55:31 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:55:31 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:55:33 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:55:33 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:55:34 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:55:34 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:55:38 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:55:38 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:55:39 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:55:39 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:55:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:55:43 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:55:44 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:55:44 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:55:46 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:55:46 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:55:46 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:55:46 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:55:56 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:55:56 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:55:56 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:55:56 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:56:07 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:56:07 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:56:07 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:56:07 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:56:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:56:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:56:23 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:56:23 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:56:28 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:56:28 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:56:29 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:56:29 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:56:30 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 21:56:31 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019-2022 HTTP/1.1" 200 102
+2023-05-23 21:56:31 - flaskr - ERROR - list index out of range
+2023-05-23 21:56:31 - flaskr - ERROR - Unhandled Exception: local variable 'all_data' referenced before assignment
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 39, in _get_ppp_data
+    for record in all_data:
+UnboundLocalError: local variable 'all_data' referenced before assignment
+2023-05-23 21:56:31 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 21:56:31] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 21:57:20 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:57:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:57:21 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:57:21 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 21:58:58 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 21:58:58 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 21:58:59 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 21:58:59 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:00:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:00:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:00:54 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:00:54 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:00:56 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:00:58 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:00:59 - flaskr - ERROR - 400 Bad Request: No ppp data recieved from api
+2023-05-23 22:00:59 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:00:59] "GET /about HTTP/1.1" 200 -
+2023-05-23 22:00:59 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:00:59] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 22:00:59 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:00:59] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-23 22:01:21 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:01:21 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:01:22 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:01:22 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:01:27 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:01:27 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:01:28 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:01:28 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:01:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:01:48 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:01:49 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:01:49 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:01:50 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:01:50 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:01:50 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:01:50 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:01:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:01:55 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019-2022 HTTP/1.1" 200 102
+2023-05-23 22:01:55 - flaskr - ERROR - list index out of range
+2023-05-23 22:01:55 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:01:55] "GET /about HTTP/1.1" 200 -
+2023-05-23 22:02:15 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:02:15 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:02:16 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:02:16 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:02:17 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:02:17 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:02:17 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:02:17 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:02:18 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:02:20 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:02:21 - flaskr - ERROR - 400 Bad Request: No ppp data recieved from api
+2023-05-23 22:02:21 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:02:21] "GET /about HTTP/1.1" 200 -
+2023-05-23 22:02:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:02:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:02:38 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:02:38 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:02:39 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:02:40 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:02:41 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:02:41] "GET /about HTTP/1.1" 200 -
+2023-05-23 22:04:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:04:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:04:05 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:04:05 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:04:09 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:04:09 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:04:18 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:04:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:04:28 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:04:33 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:04:41 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:04:44 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:04:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:04:53 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:05:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:05:41 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:05:42 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:05:42 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:05:49 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:05:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:05:50 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:05:50 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:05:51 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:05:51 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:05:52 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:05:52 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:05:58 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:05:58 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:05:59 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:05:59 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:06:05 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:06:05 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:06:06 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:06:06 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:06:12 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:06:12 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:06:12 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:06:12 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:07:32 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:07:32 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:07:32 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:07:32 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:07:36 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:07:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:07:37 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:07:37 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:07:41 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:07:41 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:07:42 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:07:42 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:07:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:07:48 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:07:49 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:07:49 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:07:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:07:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:07:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:07:55 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:08:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:08:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:08:05 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:08:05 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:08:13 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:08:13 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:08:14 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:08:14 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:08:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:08:19 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:08:20 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:08:20 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:08:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:08:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:08:23 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:08:23 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:08:26 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:08:26 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:08:27 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:08:27 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:08:29 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:08:29 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:08:30 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:08:30 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:08:34 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:08:34 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:08:35 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:08:35 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:09:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:09:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:09:02 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:09:02 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:09:18 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:09:18 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:09:19 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:09:19 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:09:36 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:09:36 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:09:37 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:09:37 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:09:40 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:09:40 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:09:41 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:09:41 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:09:47 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:09:47 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:09:48 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:09:48 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:09:51 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:09:51 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:09:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:09:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:09:55 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:09:57 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:09:57 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:09:57 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:09:57 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:10:00 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:10:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:10:01 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:10:01 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:10:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:10:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:10:48 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:10:49 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:10:49 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:10:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:10:51 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:10:51 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:10:52 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:10:52 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:10:52 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:11:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:11:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:11:05 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:11:05 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:11:05 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:11:06 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:11:07 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:11:07] "GET /about HTTP/1.1" 200 -
+2023-05-23 22:11:07 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:11:07] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 22:11:07 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:11:07] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-23 22:11:12 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:11:12 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:11:15 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:11:16 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:11:16 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:11:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:11:22 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:11:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:11:25 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:11:25 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:11:25 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:11:28 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:11:28 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:11:29 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:11:29 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:11:40 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:11:40 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:11:41 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:11:41 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:11:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:11:43 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:11:45 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:11:46 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:11:46 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:11:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:11:51 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:11:52 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:11:52] "GET /about HTTP/1.1" 200 -
+2023-05-23 22:11:52 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:11:52] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-05-23 22:11:57 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:11:57 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:11:58 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:11:58 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:12:06 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:12:06 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:12:07 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:12:07 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:12:55 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:12:55 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:12:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:12:55 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:13:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:13:05 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:13:08 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:13:09 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:13:09 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:13:16 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:13:16 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:13:16 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:13:16 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:13:29 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:13:29 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:13:29 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:13:29 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:13:34 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:13:35 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:13:35 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:13:35 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:13:39 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:13:39 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:13:40 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:13:40 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:13:53 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:13:53 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:13:54 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:13:54 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:13:57 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:13:57 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:13:58 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:13:58 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:14:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:14:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:14:02 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:14:02 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:14:03 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:14:03 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:14:03 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:14:03 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:14:05 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:14:06 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:14:06 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:14:06 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:14:08 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:14:08 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:14:09 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:14:09 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:14:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:14:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:14:11 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:14:11 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:15:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:15:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:15:41 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:15:45 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:15:46 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:15:46 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:15:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:15:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:15:54 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:15:54 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:16:05 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:16:05 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:16:05 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:16:05 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:20:52 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-23 22:20:52 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-23 22:20:52 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:20:53 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:20:53 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:21:20 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:21:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:22:15 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:22:26 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:22:28 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:23:08 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:23:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:23:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:23:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:23:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:23:10 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:23:32 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:23:33 - flaskr - ERROR - Unhandled Exception: 'country'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 40, in _get_ppp_data
+    parsed_df = self._parse_ppp_data(ppp_data=all_data)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 94, in _parse_ppp_data
+    filter2_df = filter1_df.groupby(by='country').max()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 8262, in groupby
+    return DataFrameGroupBy(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/groupby.py", line 931, in __init__
+    grouper, exclusions, obj = get_grouper(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/grouper.py", line 985, in get_grouper
+    raise KeyError(gpr)
+KeyError: 'country'
+2023-05-23 22:23:33 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:23:33] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 22:23:59 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:24:00 - flaskr - ERROR - Unhandled Exception: 'country'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 40, in _get_ppp_data
+    parsed_df = self._parse_ppp_data(ppp_data=all_data)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 94, in _parse_ppp_data
+    filter2_df = filter1_df.groupby(by='country').max()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 8262, in groupby
+    return DataFrameGroupBy(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/groupby.py", line 931, in __init__
+    grouper, exclusions, obj = get_grouper(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/grouper.py", line 985, in get_grouper
+    raise KeyError(gpr)
+KeyError: 'country'
+2023-05-23 22:24:00 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:24:00] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 22:24:27 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:24:28 - flaskr - ERROR - Unhandled Exception: 'country'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 40, in _get_ppp_data
+    parsed_df = self._parse_ppp_data(ppp_data=all_data)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 94, in _parse_ppp_data
+    filter2_df = filter1_df.groupby(by='country').max()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 8262, in groupby
+    return DataFrameGroupBy(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/groupby.py", line 931, in __init__
+    grouper, exclusions, obj = get_grouper(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/grouper.py", line 985, in get_grouper
+    raise KeyError(gpr)
+KeyError: 'country'
+2023-05-23 22:24:28 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:24:28] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 22:24:38 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:24:39 - flaskr - ERROR - Unhandled Exception: 'country'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 40, in _get_ppp_data
+    parsed_df = self._parse_ppp_data(ppp_data=all_data)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 94, in _parse_ppp_data
+    filter2_df = filter1_df.groupby(by='country').max()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 8262, in groupby
+    return DataFrameGroupBy(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/groupby.py", line 931, in __init__
+    grouper, exclusions, obj = get_grouper(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/grouper.py", line 985, in get_grouper
+    raise KeyError(gpr)
+KeyError: 'country'
+2023-05-23 22:24:39 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:24:39] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 22:24:40 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:24:41 - flaskr - ERROR - Unhandled Exception: 'country'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 40, in _get_ppp_data
+    parsed_df = self._parse_ppp_data(ppp_data=all_data)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 94, in _parse_ppp_data
+    filter2_df = filter1_df.groupby(by='country').max()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 8262, in groupby
+    return DataFrameGroupBy(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/groupby.py", line 931, in __init__
+    grouper, exclusions, obj = get_grouper(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/grouper.py", line 985, in get_grouper
+    raise KeyError(gpr)
+KeyError: 'country'
+2023-05-23 22:24:41 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:24:41] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 22:25:00 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:25:00 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:25:01 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:25:01 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:25:01 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:25:02 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:25:02 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:25:02 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:25:02 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:25:02 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:25:03 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:25:03 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:25:04 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:25:04 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:25:04 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:25:12 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:25:12] "GET /home HTTP/1.1" 200 -
+2023-05-23 22:25:12 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:25:12] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 22:25:12 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:25:12] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-23 22:27:15 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:27:16 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:27:16] "GET /about HTTP/1.1" 200 -
+2023-05-23 22:30:03 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:30:03 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:30:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:30:05 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:30:05 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:30:07 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:30:07 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:30:08 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:30:08 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:32:14 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:32:14 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:32:15 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:32:15 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:32:20 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:32:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:32:21 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:32:21 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:32:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:32:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:32:26 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:32:27 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:32:27 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:32:32 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:32:32 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:32:33 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:32:33 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:32:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:32:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:32:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:32:55 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:32:58 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:32:58 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:32:59 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:32:59 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:33:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:33:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:33:01 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:33:01 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:33:27 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:33:27 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:33:28 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:33:28 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:34:35 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:34:35 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:34:35 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:34:35 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:34:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:34:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:34:37 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:34:37 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:34:41 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:36:20 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:36:20] "GET /home HTTP/1.1" 200 -
+2023-05-23 22:36:20 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:36:20] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 22:36:20 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:36:20] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-23 22:36:40 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:36:40] "GET /home HTTP/1.1" 200 -
+2023-05-23 22:36:40 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:36:40] "GET /home HTTP/1.1" 200 -
+2023-05-23 22:36:42 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:36:53 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:36:54 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:36:54] "GET /about HTTP/1.1" 200 -
+2023-05-23 22:37:20 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:37:21 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:37:26 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:37:27 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:37:27 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:37:51 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:37:51 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:37:52 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:37:52 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:37:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:37:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:37:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:37:55 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:38:03 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:38:05 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:38:06 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:38:06] "GET /about HTTP/1.1" 200 -
+2023-05-23 22:38:19 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:38:59 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:38:59 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:39:00 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:39:00 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:39:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:39:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:39:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:39:01 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:39:01 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:39:02 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:39:03 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:39:04 - flaskr - ERROR - Unhandled Exception: 'Column not found: Dat'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 40, in _get_ppp_data
+    parsed_df = self._parse_ppp_data(ppp_data=all_data)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 94, in _parse_ppp_data
+    filter2_df = filter1_df.loc[filter1_df.groupby(by='Country')['Date'].idxmax()].reset_index()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/generic.py", line 1771, in __getitem__
+    return super().__getitem__(key)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/base.py", line 244, in __getitem__
+    raise KeyError(f"Column not found: {key}")
+KeyError: 'Column not found: Dat'
+2023-05-23 22:39:04 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:39:04] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 22:39:35 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:39:36 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 22:39:38 - flaskr - ERROR - Unhandled Exception: 'Column not found: Dat'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 40, in _get_ppp_data
+    parsed_df = self._parse_ppp_data(ppp_data=all_data)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 94, in _parse_ppp_data
+    filter2_df = filter1_df.loc[filter1_df.groupby(by='Country')['Date'].idxmax()].reset_index()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/generic.py", line 1771, in __getitem__
+    return super().__getitem__(key)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/base.py", line 244, in __getitem__
+    raise KeyError(f"Column not found: {key}")
+KeyError: 'Column not found: Dat'
+2023-05-23 22:39:38 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 22:39:38] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 22:39:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:39:55 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:39:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:39:55 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:40:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:40:50 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:40:50 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:40:51 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:40:51 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:40:51 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:40:59 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:40:59 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:41:00 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:41:00 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:41:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:42:34 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:42:34 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:42:36 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:42:37 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:42:37 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:44:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:44:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:44:02 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:44:02 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:44:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:44:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:44:05 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:44:05 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:44:08 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:44:08 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:44:09 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:44:09 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:48:04 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 22:49:16 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:49:16 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:49:17 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:49:21 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:49:32 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:49:39 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:49:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:50:05 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:50:09 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:50:17 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:50:19 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:50:20 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:50:20 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:50:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:50:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:50:24 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:50:24 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:50:28 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:50:28 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:50:28 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:50:28 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:50:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:50:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:50:37 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:50:37 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:50:46 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:50:46 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:50:46 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:50:46 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:50:49 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:50:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:50:50 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:50:50 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:50:51 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:50:51 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:50:52 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:50:52 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:02 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:02 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:03 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:03 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:05 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:05 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:06 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:06 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:11 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:11 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:13 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:13 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:13 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:13 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:22 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:22 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:22 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:24 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:24 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:25 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:25 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:26 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:26 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:27 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:27 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:28 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:28 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:29 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:29 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:30 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:30 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:31 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:31 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:34 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:34 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:34 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:34 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:41 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:41 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:41 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:41 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:49 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:49 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:51:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:51:55 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:51:59 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:51:59 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:52:00 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:52:00 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:52:05 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:52:05 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:52:06 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:52:06 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:52:09 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:52:09 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:52:10 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:52:10 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:52:59 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/definitions.py', reloading
+2023-05-23 22:52:59 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:00 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:53:00 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:53:16 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:53:16 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:18 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:19 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:53:19 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:53:20 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:53:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:20 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:53:20 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:53:25 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:53:26 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:34 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:35 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:53:35 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:53:36 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:53:36 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:37 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:53:37 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:53:41 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:53:41 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:41 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:53:41 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:53:44 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:53:45 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:45 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:53:45 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:53:51 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:53:51 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:52 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:53:52 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:53:55 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:53:55 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:56 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:53:56 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:53:57 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:53:57 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:53:58 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:53:58 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:54:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:54:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:54:02 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:54:02 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:54:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:54:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:54:05 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:54:05 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:54:07 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:54:07 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:54:07 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:54:07 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:54:08 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:54:09 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:54:09 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:54:09 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:54:12 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:54:12 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:54:13 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:54:13 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:54:16 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:54:16 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:54:17 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:54:17 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:54:55 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:54:56 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:54:56 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:54:56 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:02 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:55:02 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:07 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:07 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:08 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:55:08 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:11 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:55:11 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:24 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:55:24 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:25 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:25 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:26 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:55:26 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:28 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:28 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:29 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:30 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:55:30 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:31 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:31 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:32 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:55:32 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:33 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:33 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:35 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:36 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:55:36 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:38 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:55:38 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:47 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:47 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:48 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:50 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:50 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:55:50 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:52 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:53 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:55:53 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:55:53 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:55:59 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:55:59 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:56:00 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:56:00 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:56:15 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:56:15 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:56:16 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:56:16 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:56:20 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:56:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:56:21 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:56:21 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:56:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:56:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:56:24 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:56:24 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:56:25 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:56:25 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:56:26 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:56:26 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:56:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:56:43 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:56:44 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:56:44 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:56:45 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:56:45 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:56:46 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:56:46 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:56:47 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:56:47 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:56:48 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:56:48 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:56:49 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:56:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:56:49 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:56:49 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:56:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:56:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:56:54 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:56:54 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:57:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:57:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:57:08 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:57:09 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:57:09 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:57:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:57:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:57:10 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:57:10 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:57:18 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:57:18 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:57:18 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:57:18 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:57:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:57:19 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:57:20 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:57:20 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:57:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:57:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:57:24 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:57:24 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:57:27 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:57:27 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:57:28 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:57:28 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:57:33 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:57:33 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:57:34 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:57:34 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:57:36 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:57:36 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:57:37 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:57:37 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:57:39 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:57:39 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:57:39 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:57:39 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:57:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:57:43 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:02 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:02 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:03 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:03 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:04 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:04 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:05 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:05 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:05 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:05 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:10 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:10 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:11 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:12 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:12 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:12 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:13 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:13 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:14 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:14 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:20 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:21 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:21 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:23 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:24 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:24 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:26 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:26 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:27 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:27 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:28 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:28 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:29 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:29 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:36 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:36 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:36 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:36 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:40 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:40 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:40 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:40 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:58:44 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:58:44 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:58:45 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:58:45 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:03 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:04 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:04 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:11 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:11 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:17 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:17 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:18 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:18 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:20 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:21 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:21 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:25 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:25 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:26 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:26 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:29 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:29 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:30 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:30 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:32 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:32 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:32 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:32 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:37 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:37 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:41 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:41 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:42 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:42 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:44 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:44 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:45 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:45 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:47 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:47 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:48 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:48 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:51 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:51 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:52 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:52 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 22:59:55 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 22:59:55 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 22:59:56 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 22:59:56 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:00:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:00:19 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:00:20 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:00:20 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:00:28 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:00:28 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:00:29 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:00:29 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:00:34 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:00:34 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:00:35 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:00:35 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:00:45 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:00:45 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:00:46 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:00:46 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:00:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:00:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:00:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:00:55 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:00:56 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:00:56 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:00:56 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:00:56 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:01:00 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:01:00 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:01:00 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:01:00 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:01:08 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:01:09 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:01:09 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:01:09 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:01:18 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:01:18 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:01:19 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:01:19 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:01:41 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:01:42 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:01:42 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:01:42 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:01:55 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:01:55 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:01:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:01:55 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:02:02 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:02:03 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:02:03 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:02:03 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:02:15 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:02:15 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:02:16 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:02:16 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:02:20 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:02:20 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:02:21 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:02:21 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:02:24 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:02:24 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:02:25 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:02:25 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:02:28 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:02:28 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:02:29 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:02:29 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:02:36 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:02:36 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:02:37 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:02:37 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:02:44 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:02:44 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:02:44 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:02:44 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:02:59 - flaskr - ERROR - 'Flask' object has no attribute 'log'
+2023-05-23 23:02:59 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:02:59] "GET /about HTTP/1.1" 200 -
+2023-05-23 23:02:59 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:02:59] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-23 23:02:59 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:02:59] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 23:03:01 - flaskr - ERROR - 'Flask' object has no attribute 'log'
+2023-05-23 23:03:01 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:03:01] "GET /about HTTP/1.1" 200 -
+2023-05-23 23:03:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:03:22 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:03:23 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:03:23 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:03:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:03:48 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:03:49 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:03:49 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:03:53 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:03:53 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:03:54 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:03:54 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:04:00 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:04:00 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:04:01 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:04:01 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:04:13 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:04:13 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:04:14 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:04:14 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:04:24 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:04:24 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:04:25 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:04:25 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:04:27 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:04:27 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:04:28 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:04:28 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:04:30 - flaskr - INFO - Fetching the PPP data from World Bank API: Started
+2023-05-23 23:04:30 - flaskr - ERROR - 'Flask' object has no attribute 'log'
+2023-05-23 23:04:30 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:04:30] "GET /about HTTP/1.1" 200 -
+2023-05-23 23:04:45 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:04:45 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:04:46 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:04:46 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:05:49 - flaskr - INFO - Fetching the PPP data from World Bank API: Started
+2023-05-23 23:05:49 - flaskr - ERROR - 'Flask' object has no attribute 'log'
+2023-05-23 23:05:49 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:05:49] "GET /about HTTP/1.1" 200 -
+2023-05-23 23:05:50 - flaskr - INFO - Fetching the PPP data from World Bank API: Started
+2023-05-23 23:05:50 - flaskr - ERROR - 'Flask' object has no attribute 'log'
+2023-05-23 23:05:50 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:05:50] "GET /about HTTP/1.1" 200 -
+2023-05-23 23:05:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:05:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:05:55 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:05:55 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:06:30 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-23 23:06:30 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-23 23:06:30 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:06:31 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:06:31 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:06:37 - flaskr - INFO - Fetching the PPP data from World Bank API: Started
+2023-05-23 23:06:37 - flaskr - ERROR - 'Flask' object has no attribute 'log'
+2023-05-23 23:06:37 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:06:37] "GET /about HTTP/1.1" 200 -
+2023-05-23 23:07:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:07:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:07:05 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:07:05 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:07:07 - flaskr - INFO - Fetching the PPP data from World Bank API: Started
+2023-05-23 23:07:07 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-05-23 23:07:07 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 23:09:18 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 23:09:20 - flaskr - INFO - Data fetched successfully from World Bank API
+2023-05-23 23:09:20 - flaskr - ERROR - Unhandled Exception: reduction operation 'argmax' not allowed for this dtype
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    Serve3rdPartyAPI()._get_ppp_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 41, in _get_ppp_data
+    parsed_df = self._parse_ppp_data(ppp_data=all_data)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 105, in _parse_ppp_data
+    filter1_df.groupby(by="Country")["Date"].idxmax()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/generic.py", line 1086, in idxmax
+    result = self._op_via_apply("idxmax", axis=axis, skipna=skipna)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/groupby.py", line 981, in _op_via_apply
+    result = self._python_apply_general(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/groupby.py", line 1402, in _python_apply_general
+    values, mutated = self.grouper.apply(f, data, self.axis)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/ops.py", line 767, in apply
+    res = f(group)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/groupby/groupby.py", line 969, in curried
+    return f(x, *args, **kwargs)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/series.py", line 2527, in idxmax
+    i = self.argmax(axis, skipna, *args, **kwargs)  # type: ignore[arg-type]
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/base.py", line 678, in argmax
+    return nanops.nanargmax(  # type: ignore[return-value]
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/nanops.py", line 91, in _f
+    raise TypeError(
+TypeError: reduction operation 'argmax' not allowed for this dtype
+2023-05-23 23:09:20 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:09:20] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-05-23 23:11:37 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-23 23:11:37 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-23 23:11:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:11:38 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:11:38 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:12:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:12:02 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:12:02 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:12:02 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:12:05 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:12:05 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:12:06 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:12:06 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:12:14 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:12:14 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:12:15 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:12:15 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:12:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:12:19 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:12:20 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:12:20 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:12:39 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:12:39 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:12:42 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:12:42 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:12:42 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:12:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:12:43 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:12:48 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:12:51 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:12:52 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:12:52 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:12:53 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:12:53 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:12:54 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:12:54 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:13:00 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:13:00 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:13:01 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:13:01 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:13:05 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:13:05 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:13:06 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:13:06 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:13:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:13:10 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:13:11 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:13:11 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:13:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:13:22 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:13:23 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:13:23 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:13:31 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:13:31 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:13:33 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:13:34 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:13:34 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:13:37 - flaskr - INFO - Fetching the PPP data from World Bank API: Started
+2023-05-23 23:13:37 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-05-23 23:13:37 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 23:13:38 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 23:13:39 - flaskr - INFO - Data fetched successfully from World Bank API
+2023-05-23 23:13:39 - flaskr - INFO - Data parsed and filtered into a DataFrame
+2023-05-23 23:13:39 - flaskr - DEBUG - Top 10 data from the fetched PPP data = 
+    Country  Date      Value
+Afghanistan  2021  18.456537
+Afghanistan  2020  19.123170
+Afghanistan  2019  17.949685
+    Albania  2021  42.501873
+    Albania  2020  41.277135
+    Albania  2019  41.143866
+    Algeria  2021  41.100028
+    Algeria  2020  36.987291
+    Algeria  2019  39.615277
+     Angola  2021 204.060575
+2023-05-23 23:13:39 - flaskr - INFO - PPP data fetched, parsed and saved in data directory
+2023-05-23 23:13:39 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:13:39] "GET /about HTTP/1.1" 200 -
+2023-05-23 23:13:40 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:13:40] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-23 23:13:40 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:13:40] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-05-23 23:14:42 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:14:42 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:14:43 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:14:43 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:14:55 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-23 23:14:55 - werkzeug - INFO -  * Restarting with stat
+2023-05-23 23:14:56 - werkzeug - WARNING -  * Debugger is active!
+2023-05-23 23:14:56 - werkzeug - INFO -  * Debugger PIN: 628-587-202
+2023-05-23 23:14:58 - flaskr - INFO - Fetching the PPP data from World Bank API: Started
+2023-05-23 23:14:58 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-05-23 23:14:58 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-23 23:15:00 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-23 23:15:01 - flaskr - INFO - Data fetched successfully from World Bank API
+2023-05-23 23:15:01 - flaskr - INFO - Data parsed and filtered into a DataFrame
+2023-05-23 23:15:01 - flaskr - DEBUG - Top 10 data from the fetched PPP data = 
+ index             Country  Date      Value
+   197         Afghanistan  2021  18.456537
+   201             Albania  2021  42.501873
+   205             Algeria  2021  41.100028
+   217              Angola  2021 204.060575
+   221 Antigua and Barbuda  2021   2.028070
+   225           Argentina  2021  42.720786
+   229             Armenia  2021 160.460639
+   233               Aruba  2021   1.230079
+   236           Australia  2022   1.446332
+   240             Austria  2022   0.718930
+2023-05-23 23:15:01 - flaskr - INFO - PPP data fetched, parsed and saved in data directory
+2023-05-23 23:15:01 - werkzeug - INFO - 127.0.0.1 - - [23/May/2023 23:15:01] "GET /about HTTP/1.1" 200 -
