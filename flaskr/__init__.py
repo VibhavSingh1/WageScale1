@@ -1,6 +1,6 @@
 import logging.config
 import os
-
+from celery import Celery
 from flask import Flask
 
 app = Flask(__name__)
@@ -24,5 +24,12 @@ if not os.path.exists(constants.LOG_TODAY_DIR):
 
 logging.config.dictConfig(app.config["LOGGING"])
 
-
+# Configuring Celery
+celery = Celery(
+    app.name,
+    broker=app.config['CELERY_BROKER_URL'],
+    # backend=app.config['result_backend']
+    backend='rpc://'  # Shunting the deprecated key
+)
+# celery.conf.update(app.config)
 

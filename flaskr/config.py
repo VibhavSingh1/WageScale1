@@ -32,7 +32,7 @@ class Config(object):
     }
     # Celery-related app config
     CELERY_BROKER_URL = 'amqp://localhost'
-    CELERY_RESULT_BACKEND = 'rpc://'
+    CELERY_RESULT_BACKEND = 'rpc://' # old and deprecated soon
 
 
 class DevelopmentConfig(Config):

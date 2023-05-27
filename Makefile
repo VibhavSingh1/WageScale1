@@ -7,7 +7,8 @@ update-sys:
 
 install: update-sys
 	# Create and activate the virtual environment
-	get-venv
+	set-venv
+	get-rabbitmq
 	
 
 get-rabbitmq: update-sys
@@ -32,9 +33,14 @@ stop-rabbitmq:
 	# stop RabbitMQ server
 	sudo systemctl stop rabbitmq-server
 
+# Celery Setup
 start-celery:
-	# Start celery worker
-	celery -A your_module worker --loglevel=info
+	# Start celery worker if not running already
+	@if pgrep -f "celery -A flaskr.celery worker" > /dev/null ; then \
+		echo "Celery worker is already running" ; \
+	else \
+		celery -A flaskr.celery worker --loglevel=info ; \
+	fi
 
 # Virtual Environments
 get-venv:
@@ -50,3 +56,7 @@ start-venv:
 	# starting the virtual environment
 	. venv/bin/activate
 
+start-app:
+	# Starting the services required
+	start-rabbitmq
+	start-celery
