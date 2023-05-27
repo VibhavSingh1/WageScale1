@@ -5,7 +5,6 @@ from retrying import retry
 from flaskr import definitions as constants
 from flaskr import app
 
-
 class Serve3rdPartyAPI:
     """Class to handle third party api services"""
 

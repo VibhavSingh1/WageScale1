@@ -2,7 +2,8 @@ import os
 from flaskr import app
 from flaskr.api.services import Serve3rdPartyAPI
 from flask import render_template, Blueprint, make_response, send_file
-import flaskr.web.errorhandler
+import flaskr.errorhandler
+
 
 
 bp_web = Blueprint(

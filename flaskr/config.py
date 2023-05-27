@@ -30,6 +30,9 @@ class Config(object):
         },
         "root": {"level": "INFO", "handlers": ["file_handler"]},
     }
+    # Celery-related app config
+    CELERY_BROKER_URL = 'amqp://localhost'
+    CELERY_RESULT_BACKEND = 'rpc://'
 
 
 class DevelopmentConfig(Config):
