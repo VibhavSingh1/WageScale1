@@ -14,12 +14,10 @@ bp_web = Blueprint(
 )
 
 # It's a good practice to explicitly add these:
-# Add a static folder to the blueprint
+# Add the static folder to the blueprint
 bp_web.static_folder = "static"
-
-# Add a templates folder to the blueprint
+# Add the templates folder to the blueprint
 bp_web.template_folder = "templates"
-
 
 @bp_web.route("/")
 @bp_web.route("/index")

@@ -25,3 +25,9 @@ FETCHED_DATA_PATH = os.path.join(ROOTDIR, DATA_DIR_NAME, FETCHED_DATA_NAME)
 
 
 
+
+# Celery-related app config
+CELERY_BROKER_URL = 'amqp://localhost'
+CELERY_RESULT_BACKEND = 'rpc://' # old and deprecated soon
+CELERY_LOG_FILE_NAME = "celery.log"
+CELERY_LOG_FILE_PATH = os.path.join(LOG_TODAY_DIR, CELERY_LOG_FILE_NAME)

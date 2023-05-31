@@ -1,9 +1,10 @@
 import os
 import requests
 import pandas as pd
+from flaskr import app
 from retrying import retry
 from flaskr import definitions as constants
-from flaskr import app
+
 
 class Serve3rdPartyAPI:
     """Class to handle third party api services"""
@@ -123,6 +124,12 @@ class Serve3rdPartyAPI:
             index=None,
         )
 
+    def get_ppp_data(self):
+        """Public method to call private method for ppp data 
+        generation
+        """
+        self._get_ppp_data()
+
 
 if __name__ == "__main__":
-    Serve3rdPartyAPI()._get_ppp_data()
+    Serve3rdPartyAPI().get_ppp_data()

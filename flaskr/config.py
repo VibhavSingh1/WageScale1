@@ -30,10 +30,6 @@ class Config(object):
         },
         "root": {"level": "INFO", "handlers": ["file_handler"]},
     }
-    # Celery-related app config
-    CELERY_BROKER_URL = 'amqp://localhost'
-    CELERY_RESULT_BACKEND = 'rpc://' # old and deprecated soon
-
 
 class DevelopmentConfig(Config):
     DEBUG = True
@@ -64,3 +60,5 @@ class DevelopmentConfig(Config):
 class TestingConfig(Config):
     TESTING = True
     # SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
+
+

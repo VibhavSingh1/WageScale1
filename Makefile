@@ -1,5 +1,8 @@
 .PHONY: all
 
+LOG_DIR := flaskr/logs/$(shell date +'%Y%m%d')
+CELERY_LOG_PATH = $(LOG_DIR)/celery.log
+
 update-sys:
 	# Upadating the system
 	sudo apt-get update
@@ -7,8 +10,7 @@ update-sys:
 
 install: update-sys
 	# Create and activate the virtual environment
-	set-venv
-	get-rabbitmq
+	$(MAKE) set-venv ; $(MAKE) get-rabbitmq
 	
 
 get-rabbitmq: update-sys
@@ -31,32 +33,45 @@ start-rabbitmq:
 	
 stop-rabbitmq:
 	# stop RabbitMQ server
-	sudo systemctl stop rabbitmq-server
+	# sudo systemctl stop rabbitmq-server
+	sudo rabbitmqctl stop
+
+check-rabbitmq:
+	# checking the status of RabbitMQ-server
+	sudo systemctl status rabbitmq-server
 
 # Celery Setup
 start-celery:
-	# Start celery worker if not running already
-	@if pgrep -f "celery -A flaskr.celery worker" > /dev/null ; then \
-		echo "Celery worker is already running" ; \
-	else \
-		celery -A flaskr.celery worker --loglevel=info ; \
-	fi
+	# Start celery worker
+	mkdir -p $(LOG_DIR)
+	. venv/bin/activate && \
+	celery -A flaskr.celery_conf.celery_app worker --loglevel=info -E -f $(CELERY_LOG_PATH)
+
+stop-celery:
+	# Stop the celery worker
+	ps aux | grep 'flaskr.celery_conf.celery_app worker' | grep -v grep | awk '{ print $$2 }' | xargs -r kill
+
 
 # Virtual Environments
-get-venv:
-	# Setting virtual environment
-	sudo python3 -m venv venv
 
-set-venv: get-venv start-venv
-	# Install dependencies
-	sudo venv/bin/python -m pip install --upgrade pip
+set-venv: 
+	sudo python3 -m venv venv && \
+	. venv/bin/activate && \
+	sudo venv/bin/python -m pip install --upgrade pip && \
 	venv/bin/pip install -r requirements.txt
 
-start-venv:
-	# starting the virtual environment
-	. venv/bin/activate
-
-start-app:
+# App level targets
+start-app-services: 
 	# Starting the services required
-	start-rabbitmq
-	start-celery
+	$(MAKE) start-rabbitmq
+	sleep 5
+	$(MAKE) start-celery
+	
+
+shut-app-services:
+	# Shutting down running services
+	$(MAKE) stop-celery
+	sleep 5
+	$(MAKE) stop-rabbitmq
+
+

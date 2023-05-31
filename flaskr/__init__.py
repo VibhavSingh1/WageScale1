@@ -1,13 +1,13 @@
 import logging.config
 import os
-from celery import Celery
+
 from flask import Flask
 
 app = Flask(__name__)
 
+import flaskr.definitions as constants
 from flaskr.config import DevelopmentConfig
 from flaskr.web import bp_web
-import flaskr.definitions as constants
 
 blue_prints = [
     bp_web,
@@ -24,12 +24,5 @@ if not os.path.exists(constants.LOG_TODAY_DIR):
 
 logging.config.dictConfig(app.config["LOGGING"])
 
-# Configuring Celery
-celery = Celery(
-    app.name,
-    broker=app.config['CELERY_BROKER_URL'],
-    # backend=app.config['result_backend']
-    backend='rpc://'  # Shunting the deprecated key
-)
-# celery.conf.update(app.config)
-
+from flaskr.initialize import app_startup
+app.before_first_request(app_startup)
