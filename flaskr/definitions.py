@@ -3,45 +3,31 @@ Common constants for the project
 """
 import os
 from pathlib import Path
-from urllib.parse import urljoin
+from datetime import date
+TODAY = date.today().strftime("%Y%m%d")
 
 # BACKEND ######################################################################
-# FileAND Dir Names
-TEMPLATE_NAME = "templates"
-STATIC_DIR_NAME = "static"
-IMAGES_DIR_NAME = "images"
-CSS_DIR_NAME = "css"
+LOG_DIR_NAME = "logs"
+APP_LOG_FILE_NAME = "app.log"
+DATA_DIR_NAME = "data"
+FETCHED_DATA_NAME = "fetched"
+PPP_FILE_NAME = "ppp_data.csv"
 
-
-TEMPLATE_NAME_HOME = "index.html"  # home, index, /
-TEMPLATE_NAME_ABOUT = "about.html"
-
-BACKGROUND_IMG_NAME = "background1.jpg"
+# Request tries for fetching data
+REQUEST_TRY_COUNT = 5
 
 # Paths
 ROOTDIR = os.path.dirname(Path(os.path.abspath(__file__)))
 VENVDIR = os.path.dirname(Path(os.path.abspath(__file__)).parent)
+LOG_TODAY_DIR = os.path.join(ROOTDIR, LOG_DIR_NAME, TODAY)
+APP_LOG_FILE_PATH = os.path.join(LOG_TODAY_DIR, APP_LOG_FILE_NAME)
+FETCHED_DATA_PATH = os.path.join(ROOTDIR, DATA_DIR_NAME, FETCHED_DATA_NAME)
 
-TEMPLATE_DIR_PATH = os.path.join(
-    ROOTDIR,
-    TEMPLATE_NAME,
-)
 
-# BACKGROUND_IMG_PATH = os.path.join(
-#     STATIC_DIR_NAME,
-#     IMAGES_DIR_NAME,
-#     BACKGROUND_IMG_NAME,
-# )
 
-# # FRONTEND ######################################################################
-# # Page names
-# PAGE_ABOUT = "about"
-# PAGE_HOME = "home"
-# PAGE_INDEX = "index"
 
-# Page URLs
-# URL_HOME_1 = "/"
-# URL_HOME_2 = urljoin(URL_HOME_1, PAGE_INDEX)
-# URL_HOME_3 = urljoin(URL_HOME_1, PAGE_HOME)
-# URL_ABOUT = urljoin(URL_HOME_1, PAGE_ABOUT)
-# URL_BACKGROUND_IMG = urljoin(URL_HOME_1, BACKGROUND_IMG_PATH)
+# Celery-related app config
+CELERY_BROKER_URL = 'amqp://localhost'
+CELERY_RESULT_BACKEND = 'rpc://' # old and deprecated soon
+CELERY_LOG_FILE_NAME = "celery.log"
+CELERY_LOG_FILE_PATH = os.path.join(LOG_TODAY_DIR, CELERY_LOG_FILE_NAME)
