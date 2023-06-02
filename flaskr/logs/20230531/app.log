@@ -1,0 +1,153 @@
+2023-05-31 23:28:01 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-31 23:28:01 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-31 23:28:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:28:01 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:28:01 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:28:11 - flaskr - INFO - Starting the async execution of tasks
+2023-05-31 23:28:11 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-05-31 23:28:11 - amqp - DEBUG - using channel_id: 1
+2023-05-31 23:28:11 - amqp - DEBUG - Channel open
+2023-05-31 23:28:11 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:28:11] "GET / HTTP/1.1" 200 -
+2023-05-31 23:28:11 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:28:11] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-05-31 23:28:42 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/__init__.py', reloading
+2023-05-31 23:28:42 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:28:43 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:28:43 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:30:08 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-31 23:30:08 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:30:08 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:30:08 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:30:14 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-31 23:30:15 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:30:15 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:30:15 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:30:17 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-31 23:30:17 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-31 23:30:17 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:30:18 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:30:18 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:30:21 - flaskr - INFO - Starting the async execution of tasks
+2023-05-31 23:30:21 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-05-31 23:30:21 - amqp - DEBUG - using channel_id: 1
+2023-05-31 23:30:21 - amqp - DEBUG - Channel open
+2023-05-31 23:30:21 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:30:21] "GET / HTTP/1.1" 200 -
+2023-05-31 23:30:21 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:30:21] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-05-31 23:30:21 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:30:21] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-31 23:30:33 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-31 23:30:33 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:30:33 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:30:33 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:30:34 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-31 23:30:35 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:30:35 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:30:35 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:30:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-05-31 23:30:37 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:30:38 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:30:38 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:31:54 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-31 23:31:54 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-31 23:31:54 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:31:54 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:31:54 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:32:10 - flaskr - INFO - Starting the async execution of tasks
+2023-05-31 23:32:10 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-05-31 23:32:10 - amqp - DEBUG - using channel_id: 1
+2023-05-31 23:32:10 - amqp - DEBUG - Channel open
+2023-05-31 23:32:10 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:32:10] "GET / HTTP/1.1" 200 -
+2023-05-31 23:32:12 - flaskr - INFO - Fetching the PPP data from World Bank API: Started
+2023-05-31 23:32:12 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-05-31 23:32:12 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldbank.org:443
+2023-05-31 23:32:13 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:32:13] "GET /home HTTP/1.1" 200 -
+2023-05-31 23:32:14 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:32:14] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-05-31 23:32:14 - urllib3.connectionpool - DEBUG - https://api.worldbank.org:443 "GET /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 HTTP/1.1" 200 252454
+2023-05-31 23:32:15 - flaskr - INFO - Data fetched successfully from World Bank API
+2023-05-31 23:32:15 - flaskr - INFO - Data parsed and filtered into a DataFrame
+2023-05-31 23:32:15 - flaskr - DEBUG - Top 10 data from the fetched PPP data = 
+ index             Country  Date      Value
+   197         Afghanistan  2021  18.456537
+   201             Albania  2021  42.501873
+   205             Algeria  2021  41.100028
+   217              Angola  2021 204.060575
+   221 Antigua and Barbuda  2021   2.028070
+   225           Argentina  2021  42.720786
+   229             Armenia  2021 160.460639
+   233               Aruba  2021   1.230079
+   236           Australia  2022   1.446332
+   240             Austria  2022   0.718930
+2023-05-31 23:32:15 - flaskr - INFO - PPP data fetched, parsed and saved in data directory
+2023-05-31 23:32:15 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:32:15] "GET /about HTTP/1.1" 200 -
+2023-05-31 23:32:40 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/tasks.py', reloading
+2023-05-31 23:32:40 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:32:40 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:32:40 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:32:45 - flaskr - INFO - Starting the async execution of tasks
+2023-05-31 23:32:45 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-05-31 23:32:45 - amqp - DEBUG - using channel_id: 1
+2023-05-31 23:32:45 - amqp - DEBUG - Channel open
+2023-05-31 23:32:45 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:32:45] "GET /home HTTP/1.1" 200 -
+2023-05-31 23:34:01 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-31 23:34:01 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-31 23:34:01 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:34:02 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:34:02 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:34:28 - flaskr - INFO - Starting the async execution of tasks
+2023-05-31 23:34:28 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-05-31 23:34:28 - amqp - DEBUG - using channel_id: 1
+2023-05-31 23:34:28 - amqp - DEBUG - Channel open
+2023-05-31 23:34:28 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:34:28] "GET /home HTTP/1.1" 200 -
+2023-05-31 23:34:28 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:34:28] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-05-31 23:34:49 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/celery_conf.py', reloading
+2023-05-31 23:34:49 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:34:49 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:34:49 - werkzeug - INFO -  * Debugger PIN: 228-652-814
+2023-05-31 23:35:00 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/celery_conf.py', reloading
+2023-05-31 23:35:00 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:35:00 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:35:00 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:35:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/celery_conf.py', reloading
+2023-05-31 23:35:04 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:35:04 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:35:04 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:35:19 - flaskr - INFO - Starting the async execution of tasks
+2023-05-31 23:35:20 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-05-31 23:35:20 - amqp - DEBUG - using channel_id: 1
+2023-05-31 23:35:20 - amqp - DEBUG - Channel open
+2023-05-31 23:35:20 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:35:20] "GET /home HTTP/1.1" 200 -
+2023-05-31 23:35:20 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:35:20] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-05-31 23:36:43 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-31 23:36:43 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-31 23:36:43 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:36:43 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:36:43 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:36:50 - flaskr - INFO - Starting the async execution of tasks
+2023-05-31 23:36:50 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-05-31 23:36:50 - amqp - DEBUG - using channel_id: 1
+2023-05-31 23:36:50 - amqp - DEBUG - Channel open
+2023-05-31 23:36:50 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:36:50] "GET /home HTTP/1.1" 200 -
+2023-05-31 23:36:50 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:36:50] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-05-31 23:36:50 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:36:50] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-05-31 23:39:05 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-31 23:39:05 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-05-31 23:39:05 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:39:06 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:39:06 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:39:14 - flaskr - INFO - Starting the async execution of tasks
+2023-05-31 23:39:14 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-05-31 23:39:14 - amqp - DEBUG - using channel_id: 1
+2023-05-31 23:39:14 - amqp - DEBUG - Channel open
+2023-05-31 23:39:14 - werkzeug - INFO - 127.0.0.1 - - [31/May/2023 23:39:14] "GET /home HTTP/1.1" 200 -
+2023-05-31 23:39:52 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/tasks.py', reloading
+2023-05-31 23:39:52 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:39:53 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:39:53 - werkzeug - INFO -  * Debugger PIN: 139-750-670
+2023-05-31 23:45:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/tasks.py', reloading
+2023-05-31 23:45:22 - werkzeug - INFO -  * Restarting with stat
+2023-05-31 23:45:23 - werkzeug - WARNING -  * Debugger is active!
+2023-05-31 23:45:23 - werkzeug - INFO -  * Debugger PIN: 139-750-670
