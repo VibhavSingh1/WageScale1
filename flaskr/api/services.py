@@ -1,15 +1,15 @@
+import io
 import os
-import requests
 import pandas as pd
-from flaskr import app
+import requests
 from retrying import retry
+
+from flaskr import app
 from flaskr import definitions as constants
 
 
-class Serve3rdPartyAPI:
-    """Class to handle third party api services"""
-
-    ppp_data_path = None  # path for ppp data
+class PPPData:
+    """Class to handle third party PPP api services"""
 
     def __init__(self) -> None:
         """Constructor"""
@@ -39,7 +39,9 @@ class Serve3rdPartyAPI:
 
         # Getting parsed and filtered data
         parsed_df = self._parse_ppp_data(ppp_data=all_data)
+        parsed_df = parsed_df[["Country", "Date", "Value"]]
         app.logger.info("Data parsed and filtered into a DataFrame")
+
         # Saving the data as csv in data dir
         self._save_ppp_data(parsed_ppp_data=parsed_df)
 
@@ -116,20 +118,239 @@ class Serve3rdPartyAPI:
             parsed_ppp_data (pd.DataFrame): PPP data after parsing and filtering
         """
         parsed_ppp_data.to_csv(
-            os.path.join(
-                constants.FETCHED_DATA_PATH,
-                constants.PPP_FILE_NAME,
-            ),
+            self.ppp_data_path,
             sep="|",
-            index=None,
+            index=False,
         )
 
     def get_ppp_data(self):
-        """Public method to call private method for ppp data 
+        """Public method to call private method for ppp data
         generation
         """
         self._get_ppp_data()
 
 
+class ExchangeRateData:
+    """Class to handle third party Exchange Rates api services : Monthly calls limit is 1000"""
+
+    def __init__(self) -> None:
+        """Constructor"""
+        if not os.path.exists(constants.FETCHED_DATA_PATH):
+            os.makedirs(constants.FETCHED_DATA_PATH)
+
+        self.exch_rate_data_path = os.path.join(
+            constants.FETCHED_DATA_PATH, constants.EXCH_RATE_FILE
+        )
+
+    def _get_exch_rate_data(self) -> bool:
+        """Generates the exchange rate data after fetching from openexchangerates.org
+        in JSON form
+
+        Returns:
+            bool: True if data generated successfully else False
+        """
+        app.logger.info("Fetching the Echange Rate data from openexchangerates.org: Started")
+        try:
+            response = self._request_exch_rate_data()
+        except Exception as e:
+            app.logger.error(str(e))
+            return False
+
+        app.logger.info("Data fetched successfully from openexchangerates.org")
+
+        # Getting parsed and filtered data
+        all_data = response.json()
+        parsed_df = self._parse_exch_rate_data(exch_rate_data=all_data)
+        app.logger.info("Data parsed and filtered into a DataFrame")
+
+        # Saving the data as csv in data dir
+        self._save_exch_rate_data(parsed_exch_rate_data=parsed_df)
+        app.logger.debug(
+            "Top 10 data from the fetched exchange rate data = \n%s",
+            parsed_df.head(10).to_string(index=False),
+        )
+        app.logger.info(
+            "Exchange Rate data fetched, parsed and saved in data directory"
+        )
+
+        return True
+
+    @retry(
+        stop_max_attempt_number=constants.REQUEST_TRY_COUNT,  # Maximum number of retries
+        wait_fixed=1000,  # Wait 1 second between retries
+        retry_on_exception=lambda exc: isinstance(
+            exc, requests.exceptions.RequestException
+        ),  # Retry on network-related exceptions
+    )
+    def _request_exch_rate_data(self) -> requests.Response:
+        """Requests the exchange rate data from openexchangerates.org api endpoint
+
+        Returns:
+            list: list containing required data
+        """
+        app.logger.info("Started Requesting the data from World Bank API Endpoint")
+
+        url = "https://openexchangerates.org/api/latest.json"
+        params = {
+            "base": "USD",
+            "app_id": "d0f60989add94a08a9aa685f1f2a9d34",
+        }
+
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+
+        return response
+
+    def _parse_exch_rate_data(self, exch_rate_data: list) -> pd.DataFrame:
+        """Parse the fetched exchange rate data into a pandas dataframe after filtering it
+
+        Args:
+            exch_rate_data (list): List with exchange rate data in them
+
+        Returns:
+            pd.DataFrame: DataFrame containing parsed data as per requirement
+        """
+        exch_rate_df = pd.DataFrame(
+            data=[*exch_rate_data["rates"].items()],
+            columns=["AlphabeticCode", "ExchangeRate"],
+        )
+
+        return exch_rate_df
+
+    def _save_exch_rate_data(self, parsed_exch_rate_data: pd.DataFrame) -> None:
+        """Saves the parsed and filtered data as csv in 'flaskr/data' directory
+
+        Args:
+            parsed_exch_rate_data (pd.DataFrame): PPP data after parsing and filtering
+        """
+        parsed_exch_rate_data.to_csv(
+            self.exch_rate_data_path,
+            sep="|",
+            index=False,
+        )
+
+    def get_exch_rate_data(self):
+        """Public method to call private method for exchange rate data
+        generation
+        """
+        flag = self._get_exch_rate_data()
+        return flag
+
+
+class CurrencyData:
+    """Class to handle [Country, Currency] data fetching"""
+
+    def __init__(self) -> None:
+        """Constructor initializing instance level variables"""
+
+        if not os.path.exists(constants.FETCHED_DATA_PATH):
+            os.makedirs(constants.FETCHED_DATA_PATH)
+
+        self.data_file_path = os.path.join(
+            constants.FETCHED_DATA_PATH,
+            constants.CURRENCY_FILE,
+        )
+
+    def _get_currency_data(self) -> bool:
+        """Request data from the URL, parse it and save it at
+        "flaskr/data/fetched" if doesn't exist
+
+        Returns:
+            bool: True if file fetched or exists
+                    False if file doesn't exist and failed to fetch a new
+        """
+        # Check if file exists; if yes then return True
+        if os.path.exists(self.data_file_path):
+            app.logger.info("Currency data already exists, skipping the fetching")
+            return True
+
+        # File doesn't exist, so fetch a new
+        app.logger.info("Fetching the Currencies data: Started")
+        try:
+            response = self._request_currency_data()
+
+        except Exception as e:
+            app.logger.error(str(e))
+            return False
+
+        app.logger.info("Data fetched successfully")
+
+        # Parsing the data fetched
+        data = response.content
+        parsed_df = self._parse_data(data=data)
+        parsed_df = parsed_df[['Entity', 'Currency', 'AlphabeticCode']]
+        app.logger.info(
+            "Parsed the fetched data into dataframe with %s records", parsed_df.shape[0]
+        )
+
+        self._save_currency_data(dataframe=parsed_df)
+        app.logger.info(
+            "Currency data fetched, parsed and saved at %s", self.data_file_path
+        )
+        app.logger.debug(
+            "Top 10 data final currency data = \n%s",
+            parsed_df.head(10).to_string(index=False),
+        )
+
+        return True
+
+    @retry(
+        stop_max_attempt_number=constants.REQUEST_TRY_COUNT,  # Maximum number of retries
+        wait_fixed=1000,  # Wait 1 second between retries
+        retry_on_exception=lambda exc: isinstance(
+            exc, requests.exceptions.RequestException
+        ),  # Retry on network-related exceptions
+    )
+    def _request_currency_data(self) -> requests.Response:
+        """Requests the new file from url and returns a response object
+
+        Returns:
+            requests.Response: Response returned from the request of get data
+        """
+
+        url = "https://datahub.io/core/currency-codes/r/0.csv"
+
+        response = requests.get(url=url)
+        response.raise_for_status()
+
+        return response
+
+    def _parse_data(self, data: bytes) -> pd.DataFrame:
+        """Parse the data fetched into tabular form as dataframe
+
+        Args:
+            data (bytes): data downloaded from the URL
+
+        Returns:
+            pd.DataFrame: Downloaded data parsed into a dataframe
+        """
+
+        data_frame = pd.read_csv(io.BytesIO(data))
+
+        return data_frame
+
+    def _save_currency_data(self, dataframe: pd.DataFrame):
+        """Saves the currency dataset as csv in data dir
+
+        Args:
+            dataframe (pd.DataFrame): dataframe containing the currency data
+        """
+
+        dataframe.to_csv(
+            self.data_file_path,
+            sep="|",
+            index=False,
+        )
+
+    def get_currency_data(self) -> bool:
+        """Public Method to call private methods
+
+        Returns:
+            bool: If successful then returns True else False
+        """
+        flag = self._get_currency_data()
+        return flag
+
+
 if __name__ == "__main__":
-    Serve3rdPartyAPI().get_ppp_data()
+    PPPData().get_ppp_data()

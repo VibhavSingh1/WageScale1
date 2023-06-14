@@ -1,0 +1,1384 @@
+2023-06-15 00:19:29 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:19:29 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:19:29 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 00:19:30 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 00:19:30 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 00:31:03 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 00:31:03 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 00:31:03 - amqp - DEBUG - using channel_id: 1
+2023-06-15 00:31:03 - amqp - DEBUG - Channel open
+2023-06-15 00:31:03 - flaskr - INFO - ppp data generation task done!
+2023-06-15 00:31:03 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:31:03] "GET / HTTP/1.1" 200 -
+2023-06-15 00:31:04 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:31:04] "GET /static/images/background1.jpg HTTP/1.1" 200 -
+2023-06-15 00:31:04 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:31:04] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-06-15 00:31:05 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:31:05] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-06-15 00:32:22 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 00:32:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 00:32:24 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 00:32:24 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 00:32:25 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 00:32:25 - flaskr - INFO - Data fetched successfully
+2023-06-15 00:32:25 - flaskr - ERROR - Unhandled Exception: '_io.BytesIO' object has no attribute 'shape'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 31, in about
+    CurrencyData().get_currency_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 366, in get_currency_data
+    self._get_currency_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 299, in _get_currency_data
+    "Parsed the fetched data into dataframe with %s records", parsed_df.shape[0]
+AttributeError: '_io.BytesIO' object has no attribute 'shape'
+2023-06-15 00:32:25 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:32:25] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-06-15 00:34:38 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 00:34:38 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 00:34:39 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 00:34:39 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 00:34:42 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 00:34:43 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 00:34:43 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 00:34:43 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 00:34:49 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 00:34:49 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 00:34:49 - amqp - DEBUG - using channel_id: 1
+2023-06-15 00:34:49 - amqp - DEBUG - Channel open
+2023-06-15 00:34:49 - flaskr - INFO - ppp data generation task done!
+2023-06-15 00:34:49 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 00:34:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 00:34:51 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 00:34:51 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 00:34:51 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 00:34:51 - flaskr - INFO - Data fetched successfully
+2023-06-15 00:34:51 - flaskr - INFO - Parsed the fetched data into dataframe with 442 records
+2023-06-15 00:34:51 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 00:34:51 - flaskr - DEBUG - Top 10 data final currency data                                                                          0
+b'Entity,Currency,AlphabeticCode,NumericCode,MinorUnit,WithdrawalDate\r\n'
+                                     b'AFGHANISTAN,Afghani,AFN,971,2,\r\n'
+                               b'\xc3\x85LAND ISLANDS,Euro,EUR,978,2,\r\n'
+                                               b'ALBANIA,Lek,ALL,8,2,\r\n'
+                                   b'ALGERIA,Algerian Dinar,DZD,12,2,\r\n'
+                                b'AMERICAN SAMOA,US Dollar,USD,840,2,\r\n'
+                                            b'ANDORRA,Euro,EUR,978,2,\r\n'
+                                           b'ANGOLA,Kwanza,AOA,973,2,\r\n'
+                          b'ANGUILLA,East Caribbean Dollar,XCD,951,2,\r\n'
+                               b'ANTARCTICA,No universal currency,,,,\r\n'
+2023-06-15 00:34:51 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:34:51] "GET /about HTTP/1.1" 200 -
+2023-06-15 00:37:11 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 00:37:11 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 00:37:12 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 00:37:12 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 00:37:23 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 00:37:23 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 00:37:23 - amqp - DEBUG - using channel_id: 1
+2023-06-15 00:37:23 - amqp - DEBUG - Channel open
+2023-06-15 00:37:23 - flaskr - INFO - ppp data generation task done!
+2023-06-15 00:37:23 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 00:37:23 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:37:23] "GET /about HTTP/1.1" 200 -
+2023-06-15 00:37:23 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:37:23] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-06-15 00:37:23 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:37:23] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-06-15 00:37:23 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:37:23] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-06-15 00:39:06 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 00:39:06 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:39:06] "GET /about HTTP/1.1" 200 -
+2023-06-15 00:39:06 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:39:06] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-06-15 00:43:09 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 00:43:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 00:43:10 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 00:43:10 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 00:43:11 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 00:43:11 - flaskr - INFO - Data fetched successfully
+2023-06-15 00:43:11 - flaskr - ERROR - Unhandled Exception: module 'pandas' has no attribute 'read'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 31, in about
+    CurrencyData().get_currency_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 366, in get_currency_data
+    self._get_currency_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 296, in _get_currency_data
+    parsed_df = self._parse_data(data=data)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 344, in _parse_data
+    data_frame = pd.read_csv(io.BytesIO(data))
+AttributeError: module 'pandas' has no attribute 'read'
+2023-06-15 00:43:11 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:43:11] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-06-15 00:45:25 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 00:45:25 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 00:45:30 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 00:45:31 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 00:45:31 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 00:45:32 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 00:45:32 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 00:45:33 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 00:45:33 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 00:45:45 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 00:45:45 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 00:45:45 - amqp - DEBUG - using channel_id: 1
+2023-06-15 00:45:45 - amqp - DEBUG - Channel open
+2023-06-15 00:45:45 - flaskr - INFO - ppp data generation task done!
+2023-06-15 00:45:45 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 00:45:45 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 00:45:47 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 00:45:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 00:45:47 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 00:45:47 - flaskr - INFO - Data fetched successfully
+2023-06-15 00:45:48 - flaskr - INFO - Parsed the fetched data into dataframe with 441 records
+2023-06-15 00:45:48 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 00:45:48 - flaskr - DEBUG - Top 10 data final currency data              Entity              Currency AlphabeticCode  NumericCode MinorUnit WithdrawalDate
+        AFGHANISTAN               Afghani            AFN        971.0         2            NaN
+      ÅLAND ISLANDS                  Euro            EUR        978.0         2            NaN
+            ALBANIA                   Lek            ALL          8.0         2            NaN
+            ALGERIA        Algerian Dinar            DZD         12.0         2            NaN
+     AMERICAN SAMOA             US Dollar            USD        840.0         2            NaN
+            ANDORRA                  Euro            EUR        978.0         2            NaN
+             ANGOLA                Kwanza            AOA        973.0         2            NaN
+           ANGUILLA East Caribbean Dollar            XCD        951.0         2            NaN
+         ANTARCTICA No universal currency            NaN          NaN       NaN            NaN
+ANTIGUA AND BARBUDA East Caribbean Dollar            XCD        951.0         2            NaN
+2023-06-15 00:45:48 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:45:48] "GET /about HTTP/1.1" 200 -
+2023-06-15 00:45:48 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:45:48] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-06-15 00:45:48 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:45:48] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-06-15 01:04:45 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 01:04:45 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:04:46 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:04:46 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:04:58 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 01:04:58 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 01:04:58 - amqp - DEBUG - using channel_id: 1
+2023-06-15 01:04:58 - amqp - DEBUG - Channel open
+2023-06-15 01:04:58 - flaskr - INFO - ppp data generation task done!
+2023-06-15 01:04:58 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 01:04:58 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 01:05:00 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 01:05:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 01:05:00 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 01:05:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 01:05:01 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 01:05:01 - flaskr - INFO - Data fetched successfully
+2023-06-15 01:05:01 - flaskr - INFO - Parsed the fetched data into dataframe with 441 records
+2023-06-15 01:05:01 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 01:05:01 - flaskr - DEBUG - Top 10 data final currency data              Entity              Currency AlphabeticCode  NumericCode MinorUnit WithdrawalDate
+        AFGHANISTAN               Afghani            AFN        971.0         2            NaN
+      ÅLAND ISLANDS                  Euro            EUR        978.0         2            NaN
+            ALBANIA                   Lek            ALL          8.0         2            NaN
+            ALGERIA        Algerian Dinar            DZD         12.0         2            NaN
+     AMERICAN SAMOA             US Dollar            USD        840.0         2            NaN
+            ANDORRA                  Euro            EUR        978.0         2            NaN
+             ANGOLA                Kwanza            AOA        973.0         2            NaN
+           ANGUILLA East Caribbean Dollar            XCD        951.0         2            NaN
+         ANTARCTICA No universal currency            NaN          NaN       NaN            NaN
+ANTIGUA AND BARBUDA East Caribbean Dollar            XCD        951.0         2            NaN
+2023-06-15 01:05:01 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:05:01] "GET /about HTTP/1.1" 200 -
+2023-06-15 01:05:02 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 01:05:02 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 01:05:03 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 01:05:03 - flaskr - INFO - Data fetched successfully
+2023-06-15 01:05:03 - flaskr - INFO - Parsed the fetched data into dataframe with 441 records
+2023-06-15 01:05:03 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 01:05:03 - flaskr - DEBUG - Top 10 data final currency data              Entity              Currency AlphabeticCode  NumericCode MinorUnit WithdrawalDate
+        AFGHANISTAN               Afghani            AFN        971.0         2            NaN
+      ÅLAND ISLANDS                  Euro            EUR        978.0         2            NaN
+            ALBANIA                   Lek            ALL          8.0         2            NaN
+            ALGERIA        Algerian Dinar            DZD         12.0         2            NaN
+     AMERICAN SAMOA             US Dollar            USD        840.0         2            NaN
+            ANDORRA                  Euro            EUR        978.0         2            NaN
+             ANGOLA                Kwanza            AOA        973.0         2            NaN
+           ANGUILLA East Caribbean Dollar            XCD        951.0         2            NaN
+         ANTARCTICA No universal currency            NaN          NaN       NaN            NaN
+ANTIGUA AND BARBUDA East Caribbean Dollar            XCD        951.0         2            NaN
+2023-06-15 01:05:03 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:05:03] "GET /about HTTP/1.1" 200 -
+2023-06-15 01:05:03 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:05:03] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-06-15 01:05:03 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:05:03] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-06-15 01:05:03 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:05:03] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-06-15 01:05:40 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 01:05:40 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:05:41 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:05:41 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:05:49 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 01:05:49 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:05:50 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:05:50 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:05:56 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 01:05:56 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 01:05:56 - amqp - DEBUG - using channel_id: 1
+2023-06-15 01:05:56 - amqp - DEBUG - Channel open
+2023-06-15 01:05:56 - flaskr - INFO - ppp data generation task done!
+2023-06-15 01:05:56 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 01:05:56 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 01:05:58 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 01:05:58 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 01:05:59 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 01:05:59 - flaskr - INFO - Data fetched successfully
+2023-06-15 01:05:59 - flaskr - INFO - Parsed the fetched data into dataframe with 441 records
+2023-06-15 01:05:59 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 01:05:59 - flaskr - DEBUG - Top 10 data final currency data              Entity              Currency AlphabeticCode  NumericCode MinorUnit WithdrawalDate
+        AFGHANISTAN               Afghani            AFN        971.0         2            NaN
+      ÅLAND ISLANDS                  Euro            EUR        978.0         2            NaN
+            ALBANIA                   Lek            ALL          8.0         2            NaN
+            ALGERIA        Algerian Dinar            DZD         12.0         2            NaN
+     AMERICAN SAMOA             US Dollar            USD        840.0         2            NaN
+            ANDORRA                  Euro            EUR        978.0         2            NaN
+             ANGOLA                Kwanza            AOA        973.0         2            NaN
+           ANGUILLA East Caribbean Dollar            XCD        951.0         2            NaN
+         ANTARCTICA No universal currency            NaN          NaN       NaN            NaN
+ANTIGUA AND BARBUDA East Caribbean Dollar            XCD        951.0         2            NaN
+2023-06-15 01:05:59 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:05:59] "GET /about HTTP/1.1" 200 -
+2023-06-15 01:06:34 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 01:06:34 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 01:06:34 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:06:35 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:06:35 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:06:37 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 01:06:37 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 01:06:37 - amqp - DEBUG - using channel_id: 1
+2023-06-15 01:06:37 - amqp - DEBUG - Channel open
+2023-06-15 01:06:37 - flaskr - INFO - ppp data generation task done!
+2023-06-15 01:06:37 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 01:06:37 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:06:37] "GET /about HTTP/1.1" 200 -
+2023-06-15 01:07:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 01:07:22 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:07:26 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:07:27 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:07:27 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:07:30 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 01:07:30 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:07:31 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:07:31 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:07:32 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 01:07:32 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:07:33 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:07:33 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:07:35 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 01:07:35 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:07:36 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:07:36 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:07:39 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 01:07:39 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:07:40 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:07:40 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:09:00 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 01:09:00 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 01:09:00 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:09:01 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:09:01 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:09:05 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 01:09:05 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 01:09:05 - amqp - DEBUG - using channel_id: 1
+2023-06-15 01:09:05 - amqp - DEBUG - Channel open
+2023-06-15 01:09:05 - flaskr - INFO - ppp data generation task done!
+2023-06-15 01:09:05 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 01:09:05 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 01:09:07 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 01:09:07 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 01:09:07 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 01:09:07 - flaskr - INFO - Data fetched successfully
+2023-06-15 01:09:07 - flaskr - INFO - Parsed the fetched data into dataframe with 441 records
+2023-06-15 01:09:07 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 01:09:07 - flaskr - DEBUG - Top 10 data final currency data              Entity              Currency AlphabeticCode  NumericCode MinorUnit WithdrawalDate
+        AFGHANISTAN               Afghani            AFN        971.0         2            NaN
+      ÅLAND ISLANDS                  Euro            EUR        978.0         2            NaN
+            ALBANIA                   Lek            ALL          8.0         2            NaN
+            ALGERIA        Algerian Dinar            DZD         12.0         2            NaN
+     AMERICAN SAMOA             US Dollar            USD        840.0         2            NaN
+            ANDORRA                  Euro            EUR        978.0         2            NaN
+             ANGOLA                Kwanza            AOA        973.0         2            NaN
+           ANGUILLA East Caribbean Dollar            XCD        951.0         2            NaN
+         ANTARCTICA No universal currency            NaN          NaN       NaN            NaN
+ANTIGUA AND BARBUDA East Caribbean Dollar            XCD        951.0         2            NaN
+2023-06-15 01:09:07 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:09:07] "GET /about HTTP/1.1" 200 -
+2023-06-15 01:10:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 01:10:19 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:10:20 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:10:20 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:10:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 01:10:22 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 01:10:23 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 01:10:23 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 01:10:27 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 01:10:27 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 01:10:27 - amqp - DEBUG - using channel_id: 1
+2023-06-15 01:10:27 - amqp - DEBUG - Channel open
+2023-06-15 01:10:27 - flaskr - INFO - ppp data generation task done!
+2023-06-15 01:10:27 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 01:10:27 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:10:27] "GET /about HTTP/1.1" 200 -
+2023-06-15 01:10:27 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:10:27] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-06-15 01:10:27 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:10:27] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-06-15 01:10:57 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 01:10:57 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 01:10:59 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 01:10:59 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 01:11:00 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 01:11:00 - flaskr - INFO - Data fetched successfully
+2023-06-15 01:11:00 - flaskr - INFO - Parsed the fetched data into dataframe with 441 records
+2023-06-15 01:11:00 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 01:11:00 - flaskr - DEBUG - Top 10 data final currency data = 
+             Entity              Currency AlphabeticCode  NumericCode MinorUnit WithdrawalDate
+        AFGHANISTAN               Afghani            AFN        971.0         2            NaN
+      ÅLAND ISLANDS                  Euro            EUR        978.0         2            NaN
+            ALBANIA                   Lek            ALL          8.0         2            NaN
+            ALGERIA        Algerian Dinar            DZD         12.0         2            NaN
+     AMERICAN SAMOA             US Dollar            USD        840.0         2            NaN
+            ANDORRA                  Euro            EUR        978.0         2            NaN
+             ANGOLA                Kwanza            AOA        973.0         2            NaN
+           ANGUILLA East Caribbean Dollar            XCD        951.0         2            NaN
+         ANTARCTICA No universal currency            NaN          NaN       NaN            NaN
+ANTIGUA AND BARBUDA East Caribbean Dollar            XCD        951.0         2            NaN
+2023-06-15 01:11:00 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:11:00] "GET /about HTTP/1.1" 200 -
+2023-06-15 02:50:41 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 02:50:41 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 02:50:42 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 02:50:42 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:04:58 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:04:58 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:04:59 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:04:59 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:05:00 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:05:00 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:05:01 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:05:01 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:05:08 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:05:08 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:05:09 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:05:09 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:05:25 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:05:25 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:05:25 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:05:25 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:05:30 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:05:31 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:05:31 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:05:31 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:06:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:06:04 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:06:05 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:06:05 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:06:11 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:06:11 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:06:12 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:06:12 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:06:18 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:06:18 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:06:19 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:06:19 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:06:27 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:06:27 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:06:49 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:06:49 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:06:49 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:06:57 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:06:57 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:06:58 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:06:58 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:07:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:07:01 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:07:02 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:07:02 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:07:03 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:07:03 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:07:04 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:07:04 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:07:06 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:07:06 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:07:07 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:07:07 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:07:12 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:07:12 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:07:13 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:07:13 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:07:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:07:22 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:07:23 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:07:23 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:07:26 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:07:26 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:07:27 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:07:27 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:10:35 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:10:35 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:10:36 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:10:36 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:10:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:10:48 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:10:49 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:10:49 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:10:51 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:10:51 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:10:52 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:10:52 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:10:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:10:54 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:10:55 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:10:55 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:10:56 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:10:56 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:10:57 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:10:57 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:11:08 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:11:08 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:13 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:13 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:11:13 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:11:18 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:11:19 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:23 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:25 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:26 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:11:26 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:11:27 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:11:27 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:28 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:11:28 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:11:29 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:11:29 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:30 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:11:30 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:11:32 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:11:32 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:33 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:11:33 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:11:34 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:11:34 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:36 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:36 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:11:36 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:11:40 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:11:41 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:41 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:11:41 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:11:45 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:11:45 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:46 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:11:46 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:11:47 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:11:47 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:50 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:51 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:11:51 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:11:56 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:11:56 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:57 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:11:57 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:11:58 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:11:58 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:11:59 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:12:00 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:12:00 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:12:02 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:12:02 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:12:03 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:12:03 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:12:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:12:23 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:12:24 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:12:24 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:12:26 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:12:26 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:12:27 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:12:27 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:12:29 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:12:29 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:12:30 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:12:30 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:12:35 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:12:35 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:12:36 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:12:36 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:12:40 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:12:40 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:12:41 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:12:41 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:13:44 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:13:44 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:13:45 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:13:45 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:13:50 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:13:50 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:13:51 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:13:51 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:14:50 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:14:50 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:14:51 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:14:51 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:14:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:14:54 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:14:55 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:14:55 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:15:00 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:15:00 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:15:01 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:15:01 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:15:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:15:04 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:15:05 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:15:05 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:15:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:15:10 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:15:11 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:15:11 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:15:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:15:19 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:15:21 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:15:22 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:15:22 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:15:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:15:37 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:15:38 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:15:38 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:15:56 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:15:57 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:15:57 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:15:57 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:15:58 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:15:59 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:15:59 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:15:59 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:16:03 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:16:03 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:16:04 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:16:04 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:16:30 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:16:30 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:16:31 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:16:31 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:16:36 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:16:36 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:16:37 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:16:37 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:16:42 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:16:42 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:16:43 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:16:43 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:16:45 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:16:45 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:16:46 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:16:46 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:16:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:16:48 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:16:48 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:16:48 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:18:33 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:18:33 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:18:33 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:18:34 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:18:34 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:18:41 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:18:41 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:18:41 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:18:41 - amqp - DEBUG - Channel open
+2023-06-15 03:18:41 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:18:41 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 03:18:41 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 03:18:43 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 03:18:43 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 03:18:44 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 03:18:44 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 03:18:44 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 03:18:44 - flaskr - INFO - Data fetched successfully
+2023-06-15 03:18:44 - flaskr - INFO - Parsed the fetched data into dataframe with 441 records
+2023-06-15 03:18:44 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 03:18:44 - flaskr - DEBUG - Top 10 data final currency data = 
+             Entity              Currency AlphabeticCode  NumericCode MinorUnit WithdrawalDate
+        AFGHANISTAN               Afghani            AFN        971.0         2            NaN
+      ÅLAND ISLANDS                  Euro            EUR        978.0         2            NaN
+            ALBANIA                   Lek            ALL          8.0         2            NaN
+            ALGERIA        Algerian Dinar            DZD         12.0         2            NaN
+     AMERICAN SAMOA             US Dollar            USD        840.0         2            NaN
+            ANDORRA                  Euro            EUR        978.0         2            NaN
+             ANGOLA                Kwanza            AOA        973.0         2            NaN
+           ANGUILLA East Caribbean Dollar            XCD        951.0         2            NaN
+         ANTARCTICA No universal currency            NaN          NaN       NaN            NaN
+ANTIGUA AND BARBUDA East Caribbean Dollar            XCD        951.0         2            NaN
+2023-06-15 03:18:44 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:18:44] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:18:45 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 03:18:45 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 03:18:46 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 03:18:46 - flaskr - INFO - Data fetched successfully
+2023-06-15 03:18:46 - flaskr - INFO - Parsed the fetched data into dataframe with 441 records
+2023-06-15 03:18:46 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 03:18:46 - flaskr - DEBUG - Top 10 data final currency data = 
+             Entity              Currency AlphabeticCode  NumericCode MinorUnit WithdrawalDate
+        AFGHANISTAN               Afghani            AFN        971.0         2            NaN
+      ÅLAND ISLANDS                  Euro            EUR        978.0         2            NaN
+            ALBANIA                   Lek            ALL          8.0         2            NaN
+            ALGERIA        Algerian Dinar            DZD         12.0         2            NaN
+     AMERICAN SAMOA             US Dollar            USD        840.0         2            NaN
+            ANDORRA                  Euro            EUR        978.0         2            NaN
+             ANGOLA                Kwanza            AOA        973.0         2            NaN
+           ANGUILLA East Caribbean Dollar            XCD        951.0         2            NaN
+         ANTARCTICA No universal currency            NaN          NaN       NaN            NaN
+ANTIGUA AND BARBUDA East Caribbean Dollar            XCD        951.0         2            NaN
+2023-06-15 03:18:46 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:18:46] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:18:46 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:18:46] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-06-15 03:18:46 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:18:46] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-06-15 03:20:18 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:20:18 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:20:20 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:20:20 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:20:20 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:20:21 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:20:21 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:20:22 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:20:22 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:20:42 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:20:42 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:20:43 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:20:43 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:20:49 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:20:49 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:20:52 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:20:54 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:20:56 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:20:57 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:20:57 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:21:02 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:21:02 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:21:03 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:21:03 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:21:08 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:21:08 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:21:09 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:21:09 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:21:11 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:21:11 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:21:12 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:21:12 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:21:15 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:21:15 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:21:16 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:21:16 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:21:22 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:21:22 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:21:22 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:21:22 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:21:22 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:21:23 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:21:23 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:21:23 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:21:23 - amqp - DEBUG - Channel open
+2023-06-15 03:21:23 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:21:23 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:21:23 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:21:23] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:21:25 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:21:25 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:21:25] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:24:12 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:24:12 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:24:12 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:24:13 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:24:13 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:24:19 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:24:19 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:24:19 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:24:19 - amqp - DEBUG - Channel open
+2023-06-15 03:24:19 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:24:19 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:24:19 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:24:19] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:24:19 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:24:19] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-06-15 03:24:19 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:24:19] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-06-15 03:24:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:24:37 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:24:38 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:24:38 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:24:42 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:24:42 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:24:42 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:24:42 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:24:53 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:24:53 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:24:53 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:24:53 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:24:57 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:24:58 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:24:58 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:24:58 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:25:03 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:25:03 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:25:03 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:25:03 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:25:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:25:05 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:25:05 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:25:05 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:25:07 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:25:08 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:25:08 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:25:08 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:25:09 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:25:10 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:25:10 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:25:10 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:25:11 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:25:12 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:25:12 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:25:12 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:25:13 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:25:13 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:25:14 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:25:14 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:25:18 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:25:18 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:25:18 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:25:19 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:25:19 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:25:20 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:25:20 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:25:20 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:25:20 - amqp - DEBUG - Channel open
+2023-06-15 03:25:20 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:25:20 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:25:20 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:25:20] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:25:23 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:25:23 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:25:23] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:25:44 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:25:44 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:25:45 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:25:45 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:25:49 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:25:49 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:25:50 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:25:50 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:25:51 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:25:51 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:25:52 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:25:52 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:26:18 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:26:18 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:26:20 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:26:21 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:26:21 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:26:26 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:26:26 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:26:27 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:26:27 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:26:33 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:26:33 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:26:34 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:26:34 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:26:39 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:26:39 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:26:40 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:26:40 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:26:49 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:26:49 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:26:49 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:26:49 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:26:49 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:26:50 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:26:50 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:26:50 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:26:50 - amqp - DEBUG - Channel open
+2023-06-15 03:26:50 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:26:50 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:26:50 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:26:50] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:26:51 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:26:51] "GET /home HTTP/1.1" 200 -
+2023-06-15 03:26:52 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:26:52 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:26:52] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:27:17 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:27:17 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:27:18 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:27:18 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:27:22 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:27:22 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:27:23 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:27:23 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:27:29 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:27:29 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:27:29 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:27:30 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:27:30 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:27:32 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:27:32 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:27:32 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:27:32 - amqp - DEBUG - Channel open
+2023-06-15 03:27:32 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:27:32 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:27:32 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:27:32] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:27:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:27:44 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:27:44 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:27:44 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:27:49 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:27:49 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:27:49 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:27:49 - amqp - DEBUG - Channel open
+2023-06-15 03:27:49 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:27:49 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:27:49] "GET /home HTTP/1.1" 200 -
+2023-06-15 03:28:32 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:28:32 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:28:33 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:28:33 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:28:38 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:28:38 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:28:43 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:28:43 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:28:43 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:28:44 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:28:44 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:28:46 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:28:46 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:28:46 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:28:46 - amqp - DEBUG - Channel open
+2023-06-15 03:28:46 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:28:46 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:28:46] "GET /home HTTP/1.1" 200 -
+2023-06-15 03:29:07 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:29:07 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:29:07 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:29:08 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:29:08 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:29:10 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:29:10 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:29:10 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:29:10 - amqp - DEBUG - Channel open
+2023-06-15 03:29:10 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:29:10 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:29:10] "GET /home HTTP/1.1" 200 -
+2023-06-15 03:29:42 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:29:42 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:29:42 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:29:43 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:29:43 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:29:46 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:29:46 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:29:46 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:29:46 - amqp - DEBUG - Channel open
+2023-06-15 03:29:46 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:29:46 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:29:46] "GET /home HTTP/1.1" 200 -
+2023-06-15 03:29:46 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:29:46] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-06-15 03:29:46 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:29:46] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-06-15 03:31:54 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:31:54 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:31:55 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:31:55 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:32:00 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:32:00 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:32:01 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:32:01 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:32:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:32:04 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:32:04 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:32:04 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:32:07 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:32:08 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:32:08 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:32:08 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:32:13 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:32:14 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:32:14 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:32:14 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:32:25 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:32:25 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:32:25 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:32:25 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:32:27 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:32:27 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:32:27 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:32:27 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:32:28 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:32:29 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:32:29 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:32:29 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:32:45 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:32:45 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:32:46 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:32:46 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:34:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-06-15 03:34:37 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:34:38 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:34:38 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:34:44 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-06-15 03:34:44 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:34:45 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:34:45 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:34:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-06-15 03:34:48 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:34:49 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:34:49 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:34:50 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py', reloading
+2023-06-15 03:34:50 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:34:51 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:34:51 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:35:15 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:35:15 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:35:16 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:35:16 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:35:26 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:35:26 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:35:27 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:35:27 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:35:37 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:35:37 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:35:38 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:35:38 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:35:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:35:43 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:35:44 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:35:44 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:35:48 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:35:48 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:35:49 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:35:49 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:35:53 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:35:53 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:35:54 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:35:54 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:36:05 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:36:05 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:36:06 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:36:06 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:36:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:36:10 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:36:11 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:36:11 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:36:13 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:36:13 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:36:14 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:36:14 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:36:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:36:19 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:36:20 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:36:20 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:36:23 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:36:23 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:36:24 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:36:24 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:36:41 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:36:41 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:36:42 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:36:42 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:37:30 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:37:30 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:37:30 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:37:31 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:37:31 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:37:36 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:37:36 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:37:36 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:37:36 - amqp - DEBUG - Channel open
+2023-06-15 03:37:36 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:37:36 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:37:36 - flaskr - INFO - Fetching the Echange Rate data from World Bank API: Started
+2023-06-15 03:37:36 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:37:36 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:37:37 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD HTTP/1.1" 403 205
+2023-06-15 03:37:38 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:37:38 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:37:39 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD HTTP/1.1" 403 205
+2023-06-15 03:37:40 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:37:40 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:37:41 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD HTTP/1.1" 403 205
+2023-06-15 03:37:42 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:37:42 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:37:44 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD HTTP/1.1" 403 205
+2023-06-15 03:37:45 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:37:45 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:37:46 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD HTTP/1.1" 403 205
+2023-06-15 03:37:46 - flaskr - ERROR - 403 Client Error: Forbidden for url: https://openexchangerates.org/api/latest.json?base=USD
+2023-06-15 03:37:46 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:37:46] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:37:46 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:37:46] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-06-15 03:37:46 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:37:46] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-06-15 03:38:40 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:38:40 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:38:41 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:38:41 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:38:46 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:38:46 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:38:47 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:38:47 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:38:52 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:38:53 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:38:53 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:38:53 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:38:57 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:38:57 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:38:57 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:38:57 - amqp - DEBUG - Channel open
+2023-06-15 03:38:57 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:38:57 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:38:57 - flaskr - INFO - Fetching the Echange Rate data from World Bank API: Started
+2023-06-15 03:38:57 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:38:57 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:38:58 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD&app_id=d0f60989add94a08a9aa685f1f2a9d34 HTTP/1.1" 200 1670
+2023-06-15 03:38:58 - flaskr - INFO - Data fetched successfully openexchangerates.org
+2023-06-15 03:38:58 - flaskr - ERROR - Unhandled Exception: 3 columns passed, passed data had 2 columns
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 934, in _finalize_columns_and_data
+    columns = _validate_or_indexify_columns(contents, columns)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 981, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 3 columns passed, passed data had 2 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    ExchangeRateData().get_exch_rate_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 237, in get_exch_rate_data
+    flag = self._get_exch_rate_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 163, in _get_exch_rate_data
+    parsed_df = self._parse_exch_rate_data(exch_rate_data=all_data)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 214, in _parse_exch_rate_data
+    exch_rate_df = pd.DataFrame(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 782, in __init__
+    arrays, columns, index = nested_data_to_arrays(
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 498, in nested_data_to_arrays
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 840, in to_arrays
+    content, columns = _finalize_columns_and_data(arr, columns, dtype)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 937, in _finalize_columns_and_data
+    raise ValueError(err) from err
+ValueError: 3 columns passed, passed data had 2 columns
+2023-06-15 03:38:58 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:38:58] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-06-15 03:40:19 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:40:19 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:40:20 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:40:20 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:40:21 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:40:21 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:40:22 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:40:22 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:40:25 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:40:25 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:40:25 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:40:25 - amqp - DEBUG - Channel open
+2023-06-15 03:40:25 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:40:25 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:40:25 - flaskr - INFO - Fetching the Echange Rate data from World Bank API: Started
+2023-06-15 03:40:25 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:40:25 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:40:26 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD&app_id=d0f60989add94a08a9aa685f1f2a9d34 HTTP/1.1" 200 1670
+2023-06-15 03:40:26 - flaskr - INFO - Data fetched successfully openexchangerates.org
+2023-06-15 03:40:26 - flaskr - ERROR - Unhandled Exception: "['Entity', 'Currency'] not in index"
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    ExchangeRateData().get_exch_rate_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 237, in get_exch_rate_data
+    flag = self._get_exch_rate_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 164, in _get_exch_rate_data
+    parsed_df = parsed_df[["Entity", "Currency", "AlphabeticCode"]]
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/frame.py", line 3767, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 5876, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 5938, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Entity', 'Currency'] not in index"
+2023-06-15 03:40:26 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:40:26] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-06-15 03:41:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:41:43 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:41:44 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:41:44 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:41:46 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:41:46 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:41:46 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:41:46 - amqp - DEBUG - Channel open
+2023-06-15 03:41:46 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:41:46 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:41:46 - flaskr - INFO - Fetching the Echange Rate data from World Bank API: Started
+2023-06-15 03:41:46 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:41:46 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:41:47 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD&app_id=d0f60989add94a08a9aa685f1f2a9d34 HTTP/1.1" 200 1670
+2023-06-15 03:41:47 - flaskr - INFO - Data fetched successfully openexchangerates.org
+2023-06-15 03:41:47 - flaskr - INFO - Data parsed and filtered into a DataFrame
+2023-06-15 03:41:47 - flaskr - ERROR - Unhandled Exception: 'ExchangeRateData' object has no attribute '_save_ppp_data'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    ExchangeRateData().get_exch_rate_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 236, in get_exch_rate_data
+    flag = self._get_exch_rate_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 167, in _get_exch_rate_data
+    self._save_ppp_data(parsed_ppp_data=parsed_df)
+AttributeError: 'ExchangeRateData' object has no attribute '_save_ppp_data'
+2023-06-15 03:41:47 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:41:47] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-06-15 03:42:10 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:42:10 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:42:11 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:42:12 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:42:12 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:42:14 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:42:14 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:42:15 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:42:15 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:42:20 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:42:20 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:42:20 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:42:20 - amqp - DEBUG - Channel open
+2023-06-15 03:42:20 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:42:20 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:42:20 - flaskr - INFO - Fetching the Echange Rate data from World Bank API: Started
+2023-06-15 03:42:20 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:42:20 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:42:58 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:42:58 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:42:59 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:42:59 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:42:59 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:42:59 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:42:59 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:42:59 - amqp - DEBUG - Channel open
+2023-06-15 03:42:59 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:42:59 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:42:59 - flaskr - INFO - Fetching the Echange Rate data from World Bank API: Started
+2023-06-15 03:42:59 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:42:59 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:43:04 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:43:04 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:43:08 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:43:08 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:43:08 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:43:42 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:43:42 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:43:42 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:43:42 - amqp - DEBUG - Channel open
+2023-06-15 03:43:42 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:43:42 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:43:42 - flaskr - INFO - Fetching the Echange Rate data from openexchangerates.org: Started
+2023-06-15 03:43:42 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:43:42 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:45:11 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:45:11 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:45:11 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:45:12 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:45:12 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:45:16 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:45:16 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:45:16 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:45:16 - amqp - DEBUG - Channel open
+2023-06-15 03:45:16 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:45:16 - flaskr - ERROR - HTTPException: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1788, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1770, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/ctx.py", line 351, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/werkzeug/routing/map.py", line 624, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2023-06-15 03:45:16 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:45:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-06-15 03:45:17 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:45:17] "GET /home HTTP/1.1" 200 -
+2023-06-15 03:45:17 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:45:17] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-06-15 03:45:17 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:45:17] "[36mGET /static/images/headerbg.jpg HTTP/1.1[0m" 304 -
+2023-06-15 03:45:19 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 03:45:19 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 03:45:21 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 03:45:21 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 03:45:22 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 03:45:22 - flaskr - INFO - Data fetched successfully
+2023-06-15 03:45:22 - flaskr - INFO - Parsed the fetched data into dataframe with 441 records
+2023-06-15 03:45:22 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 03:45:22 - flaskr - DEBUG - Top 10 data final currency data = 
+             Entity              Currency AlphabeticCode  NumericCode MinorUnit WithdrawalDate
+        AFGHANISTAN               Afghani            AFN        971.0         2            NaN
+      ÅLAND ISLANDS                  Euro            EUR        978.0         2            NaN
+            ALBANIA                   Lek            ALL          8.0         2            NaN
+            ALGERIA        Algerian Dinar            DZD         12.0         2            NaN
+     AMERICAN SAMOA             US Dollar            USD        840.0         2            NaN
+            ANDORRA                  Euro            EUR        978.0         2            NaN
+             ANGOLA                Kwanza            AOA        973.0         2            NaN
+           ANGUILLA East Caribbean Dollar            XCD        951.0         2            NaN
+         ANTARCTICA No universal currency            NaN          NaN       NaN            NaN
+ANTIGUA AND BARBUDA East Caribbean Dollar            XCD        951.0         2            NaN
+2023-06-15 03:45:22 - flaskr - INFO - Fetching the Echange Rate data from openexchangerates.org: Started
+2023-06-15 03:45:22 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:45:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:45:23 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD&app_id=d0f60989add94a08a9aa685f1f2a9d34 HTTP/1.1" 200 1670
+2023-06-15 03:45:23 - flaskr - INFO - Data fetched successfully from openexchangerates.org
+2023-06-15 03:45:23 - flaskr - INFO - Data parsed and filtered into a DataFrame
+2023-06-15 03:45:23 - flaskr - ERROR - Unhandled Exception: _save_exch_rate_data() got an unexpected keyword argument 'parsed_ppp_data'
+Traceback (most recent call last):
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vibhav/Desktop/Projects/WageScale/venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/web/routes.py", line 32, in about
+    ExchangeRateData().get_exch_rate_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 236, in get_exch_rate_data
+    flag = self._get_exch_rate_data()
+  File "/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py", line 167, in _get_exch_rate_data
+    self._save_exch_rate_data(parsed_ppp_data=parsed_df)
+TypeError: _save_exch_rate_data() got an unexpected keyword argument 'parsed_ppp_data'
+2023-06-15 03:45:23 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:45:23] "[35m[1mGET /about HTTP/1.1[0m" 500 -
+2023-06-15 03:46:29 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:46:30 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:46:30 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:46:30 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:46:31 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:46:31 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:46:32 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:46:32 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:46:35 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:46:35 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:46:35 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:46:35 - amqp - DEBUG - Channel open
+2023-06-15 03:46:35 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:46:35 - flaskr - INFO - Currency data already exists, skipping the fetching
+2023-06-15 03:46:35 - flaskr - INFO - Fetching the Echange Rate data from openexchangerates.org: Started
+2023-06-15 03:46:35 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:46:35 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:46:36 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD&app_id=d0f60989add94a08a9aa685f1f2a9d34 HTTP/1.1" 200 1670
+2023-06-15 03:46:36 - flaskr - INFO - Data fetched successfully from openexchangerates.org
+2023-06-15 03:46:36 - flaskr - INFO - Data parsed and filtered into a DataFrame
+2023-06-15 03:46:36 - flaskr - DEBUG - Top 10 data from the fetched exchange rate data = 
+AlphabeticCode  ExchangeRate
+           AED      3.672898
+           AFN     87.217385
+           ALL     99.356591
+           AMD    386.967223
+           ANG      1.802424
+           AOA    693.521933
+           ARS    247.961415
+           AUD      1.471548
+           AWG      1.800000
+           AZN      1.700000
+2023-06-15 03:46:36 - flaskr - INFO - Exchange Rate data fetched, parsed and saved in data directory
+2023-06-15 03:46:36 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:46:36] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:46:36 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:46:36] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-06-15 03:47:25 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:47:25 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:47:26 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:47:26 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:47:43 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:47:43 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:47:43 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:47:43 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:47:46 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:47:46 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:47:46 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:47:46 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:47:49 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:47:50 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:47:50 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:47:50 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:47:53 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:47:53 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:47:54 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:47:54 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:47:58 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:47:59 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:47:59 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:47:59 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:48:01 - werkzeug - INFO -  * Detected change in '/home/vibhav/Desktop/Projects/WageScale/flaskr/api/services.py', reloading
+2023-06-15 03:48:01 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:48:02 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:48:02 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:48:17 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 03:48:17 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 03:48:17 - werkzeug - INFO -  * Restarting with stat
+2023-06-15 03:48:17 - werkzeug - WARNING -  * Debugger is active!
+2023-06-15 03:48:17 - werkzeug - INFO -  * Debugger PIN: 632-044-048
+2023-06-15 03:48:22 - flaskr - INFO - Starting the async execution of tasks
+2023-06-15 03:48:22 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-15 03:48:22 - amqp - DEBUG - using channel_id: 1
+2023-06-15 03:48:22 - amqp - DEBUG - Channel open
+2023-06-15 03:48:22 - flaskr - INFO - ppp data generation task done!
+2023-06-15 03:48:22 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 03:48:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 03:48:23 - flaskr - INFO - Fetching the Currencies data: Started
+2023-06-15 03:48:23 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): datahub.io:443
+2023-06-15 03:48:24 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 03:48:24 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 03:48:24 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 03:48:24 - flaskr - INFO - Data fetched successfully
+2023-06-15 03:48:24 - flaskr - INFO - Parsed the fetched data into dataframe with 441 records
+2023-06-15 03:48:24 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 03:48:24 - flaskr - DEBUG - Top 10 data final currency data = 
+             Entity              Currency AlphabeticCode
+        AFGHANISTAN               Afghani            AFN
+      ÅLAND ISLANDS                  Euro            EUR
+            ALBANIA                   Lek            ALL
+            ALGERIA        Algerian Dinar            DZD
+     AMERICAN SAMOA             US Dollar            USD
+            ANDORRA                  Euro            EUR
+             ANGOLA                Kwanza            AOA
+           ANGUILLA East Caribbean Dollar            XCD
+         ANTARCTICA No universal currency            NaN
+ANTIGUA AND BARBUDA East Caribbean Dollar            XCD
+2023-06-15 03:48:24 - flaskr - INFO - Fetching the Echange Rate data from openexchangerates.org: Started
+2023-06-15 03:48:24 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:48:24 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:48:25 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD&app_id=d0f60989add94a08a9aa685f1f2a9d34 HTTP/1.1" 200 1670
+2023-06-15 03:48:25 - urllib3.connectionpool - DEBUG - https://datahub.io:443 "GET /core/currency-codes/r/0.csv HTTP/1.1" 302 139
+2023-06-15 03:48:25 - flaskr - INFO - Data fetched successfully from openexchangerates.org
+2023-06-15 03:48:26 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): pkgstore.datahub.io:443
+2023-06-15 03:48:26 - flaskr - INFO - Data parsed and filtered into a DataFrame
+2023-06-15 03:48:26 - flaskr - DEBUG - Top 10 data from the fetched exchange rate data = 
+AlphabeticCode  ExchangeRate
+           AED      3.672898
+           AFN     87.217385
+           ALL     99.356591
+           AMD    386.967223
+           ANG      1.802424
+           AOA    693.521933
+           ARS    247.961415
+           AUD      1.471548
+           AWG      1.800000
+           AZN      1.700000
+2023-06-15 03:48:26 - flaskr - INFO - Exchange Rate data fetched, parsed and saved in data directory
+2023-06-15 03:48:26 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:48:26] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:48:26 - urllib3.connectionpool - DEBUG - https://pkgstore.datahub.io:443 "GET /core/currency-codes/codes-all_csv/data/114ed08d6063fb491dc3f750e1420f65/codes-all_csv.csv HTTP/1.1" 200 17866
+2023-06-15 03:48:26 - flaskr - INFO - Data fetched successfully
+2023-06-15 03:48:26 - flaskr - INFO - Parsed the fetched data into dataframe with 441 records
+2023-06-15 03:48:26 - flaskr - INFO - Currency data fetched, parsed and saved at /home/vibhav/Desktop/Projects/WageScale/flaskr/data/fetched/currencies.csv
+2023-06-15 03:48:26 - flaskr - DEBUG - Top 10 data final currency data = 
+             Entity              Currency AlphabeticCode
+        AFGHANISTAN               Afghani            AFN
+      ÅLAND ISLANDS                  Euro            EUR
+            ALBANIA                   Lek            ALL
+            ALGERIA        Algerian Dinar            DZD
+     AMERICAN SAMOA             US Dollar            USD
+            ANDORRA                  Euro            EUR
+             ANGOLA                Kwanza            AOA
+           ANGUILLA East Caribbean Dollar            XCD
+         ANTARCTICA No universal currency            NaN
+ANTIGUA AND BARBUDA East Caribbean Dollar            XCD
+2023-06-15 03:48:26 - flaskr - INFO - Fetching the Echange Rate data from openexchangerates.org: Started
+2023-06-15 03:48:26 - flaskr - INFO - Started Requesting the data from World Bank API Endpoint
+2023-06-15 03:48:26 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): openexchangerates.org:443
+2023-06-15 03:48:27 - urllib3.connectionpool - DEBUG - https://openexchangerates.org:443 "GET /api/latest.json?base=USD&app_id=d0f60989add94a08a9aa685f1f2a9d34 HTTP/1.1" 200 1670
+2023-06-15 03:48:27 - flaskr - INFO - Data fetched successfully from openexchangerates.org
+2023-06-15 03:48:27 - flaskr - INFO - Data parsed and filtered into a DataFrame
+2023-06-15 03:48:27 - flaskr - DEBUG - Top 10 data from the fetched exchange rate data = 
+AlphabeticCode  ExchangeRate
+           AED      3.672898
+           AFN     87.217385
+           ALL     99.356591
+           AMD    386.967223
+           ANG      1.802424
+           AOA    693.521933
+           ARS    247.961415
+           AUD      1.471548
+           AWG      1.800000
+           AZN      1.700000
+2023-06-15 03:48:27 - flaskr - INFO - Exchange Rate data fetched, parsed and saved in data directory
+2023-06-15 03:48:27 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:48:27] "GET /about HTTP/1.1" 200 -
+2023-06-15 03:48:27 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 03:48:27] "GET /static/images/favicon1.ico HTTP/1.1" 200 -

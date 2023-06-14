@@ -1,7 +1,7 @@
 import os
 from flaskr import app
-from flaskr.api.services import Serve3rdPartyAPI
 from flask import render_template, Blueprint, make_response, send_file
+from flaskr.api.services import CurrencyData, ExchangeRateData
 import flaskr.errorhandler
 
 
@@ -28,7 +28,8 @@ def index():
 
 @bp_web.route("/about")
 def about():
-    Serve3rdPartyAPI()._get_ppp_data()
+    CurrencyData().get_currency_data()
+    ExchangeRateData().get_exch_rate_data()
     return render_template("about.html", about=True)
 
 
