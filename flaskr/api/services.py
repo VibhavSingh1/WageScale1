@@ -20,9 +20,12 @@ class PPPData:
             constants.FETCHED_DATA_PATH, constants.PPP_FILE_NAME
         )
 
-    def _get_ppp_data(self):
+    def _get_ppp_data(self) -> bool:
         """Requests PPP data from Wold Bank API
         in JSON form
+
+        Returns:
+            bool: True if the data has been saved or is present
         """
 
         app.logger.info("Fetching the PPP data from World Bank API: Started")
@@ -30,10 +33,10 @@ class PPPData:
             all_data = self._request_ppp_data()
             if all_data is None:
                 app.logger.error("400 Bad Request: No ppp data recieved from api")
-                return
+                return False
         except Exception as e:
             app.logger.error(str(e))
-            return
+            return False
 
         app.logger.info("Data fetched successfully from World Bank API")
 
@@ -50,6 +53,8 @@ class PPPData:
             parsed_df.head(10).to_string(index=False),
         )
         app.logger.info("PPP data fetched, parsed and saved in data directory")
+
+        return True
 
     @retry(
         stop_max_attempt_number=constants.REQUEST_TRY_COUNT,  # Maximum number of retries
@@ -122,12 +127,28 @@ class PPPData:
             sep="|",
             index=False,
         )
+    
+    def _check_available_data(self) -> bool:
+        """Check if there is data file is available or not
 
-    def get_ppp_data(self):
+        Returns:
+            bool: True if available else False
+        """
+        check_result = os.path.exists(self.ppp_data_path)
+        return check_result
+
+    def get_ppp_data(self) -> bool:
         """Public method to call private method for ppp data
         generation
+
+        Returns:
+            bool: True if the task is successful else False
         """
-        self._get_ppp_data()
+        flag = self._get_ppp_data()
+        if flag is False:
+            return self._check_available_data()
+        else:
+            return True
 
 
 class ExchangeRateData:
@@ -139,7 +160,7 @@ class ExchangeRateData:
             os.makedirs(constants.FETCHED_DATA_PATH)
 
         self.exch_rate_data_path = os.path.join(
-            constants.FETCHED_DATA_PATH, constants.EXCH_RATE_FILE
+            constants.FETCHED_DATA_PATH, constants.EXCH_RATE_FILE_NAME
         )
 
     def _get_exch_rate_data(self) -> bool:
@@ -228,13 +249,27 @@ class ExchangeRateData:
             sep="|",
             index=False,
         )
+    
+    def _check_available_data(self) -> bool:
+        """Check if there is data file is available or not
+
+        Returns:
+            bool: True if available else False
+        """
+        check_result = os.path.exists(self.exch_rate_data_path)
+
+        return check_result
+
 
     def get_exch_rate_data(self):
         """Public method to call private method for exchange rate data
         generation
         """
         flag = self._get_exch_rate_data()
-        return flag
+        if flag is False:
+            return self._check_available_data()
+        else:
+            return True
 
 
 class CurrencyData:
@@ -248,7 +283,7 @@ class CurrencyData:
 
         self.data_file_path = os.path.join(
             constants.FETCHED_DATA_PATH,
-            constants.CURRENCY_FILE,
+            constants.CURRENCY_FILE_NAME,
         )
 
     def _get_currency_data(self) -> bool:
@@ -260,7 +295,7 @@ class CurrencyData:
                     False if file doesn't exist and failed to fetch a new
         """
         # Check if file exists; if yes then return True
-        if os.path.exists(self.data_file_path):
+        if self._check_available_data():
             app.logger.info("Currency data already exists, skipping the fetching")
             return True
 
@@ -342,6 +377,17 @@ class CurrencyData:
             index=False,
         )
 
+    def _check_available_data(self) -> bool:
+        """Check if there is data file is available or not
+
+        Returns:
+            bool: True if available else False
+        """
+        check_result = os.path.exists(self.data_file_path)
+
+        return check_result
+
+
     def get_currency_data(self) -> bool:
         """Public Method to call private methods
 
@@ -350,6 +396,104 @@ class CurrencyData:
         """
         flag = self._get_currency_data()
         return flag
+
+class GenerateData:
+    """class to handle data generation from the fetched data
+    """
+    def __init__(self) -> None:
+        if not os.path.exists(constants.GENERATED_DATA_PATH):
+            os.makedirsO(constants.GENERATED_DATA_PATH)
+        
+        self.final_merged_data_file_path = os.path.join(
+            constants.GENERATED_DATA_PATH,
+            constants.FINAL_MERGED_DATA_FILE,
+        )
+
+        self.currency_file_path = os.path.join(
+            constants.FETCHED_DATA_PATH,
+            constants.CURRENCY_FILE_NAME,
+        )
+
+        self.ppp_file_path = os.path.join(
+            constants.FETCHED_DATA_PATH,
+            constants.PPP_FILE_NAME,
+        )
+
+        self.exch_rate_file_path = os.path.join(
+            constants.FETCHED_DATA_PATH,
+            constants.EXCH_RATE_FILE_NAME,
+        )
+    
+    def _generate_merged_final_data(self) -> bool:
+        """Reads fetched data (if all available) and generate the required 
+        final dataframe from the data
+
+        Returns:
+            bool: True if final merged data generated successfully, else False
+        """
+
+        # Check if the required fetched files exist
+        exist = self._check_if_files_exist()
+        if not exist:
+            app.logger.error("Required Data is unavailable for application to use!!")
+            return False
+        
+        # Data is available - Proceeding with final data generation
+        currency_file_df = pd.read_csv(
+            self.currency_file_path,
+            sep="|",
+        )
+        ppp_file_df = pd.read_csv(
+            self.ppp_file_path,
+            sep="|",
+        )
+
+        exch_rate_file_df = pd.read_csv(
+            self.exch_rate_file_path,
+            sep="|",
+        )
+
+        # Getting ["Country", "AlphabeticCode", "Value"] columns
+        merge1 = pd.merge(
+            left=ppp_file_df,
+            left_on="Country",
+            right=currency_file_df,
+            right_on="Entity",
+            how="inner",
+        )
+        merge1 = merge1[["Country", "AlphabeticCode", "Value"]]
+        app.logger.debug("Top 10 data after first merge [ppp and currency data] =\n%s",
+                         merge1.head(10).to_string(index=False)
+                         )
+
+        # Getting ["Country", "AlphabeticCode", "Value", "ExchangeRate"] columns
+        merge2 = pd.merge(
+            left=merge1,
+            right=exch_rate_file_df,
+            on="AlphabeticCode",
+            how="inner",
+        )
+
+        merge2.sort_values(by=["Country"])
+        app.logger.debug("Top 10 data after second merge [merged1 and exchange rate data] =\n%s",
+                         merge2.head(10).to_string(index=False)
+                         )
+        app.logger.info("Final merged data generation complete")        
+
+    def _check_if_files_exist(self) -> bool:
+        """Checks if all the files for merged file generation, exist
+
+        Returns:
+            bool: True if all exist, False if any or all are missing
+        """
+        curr_file_exists = os.path.exists(self.currency_file_path)
+        ppp_file_exists = os.path.exists(self.ppp_file_path)
+        exch_rate_file_exists = os.path.exists(self.exch_rate_file_path)
+
+        if exch_rate_file_exists and ppp_file_exists and curr_file_exists:
+            return True
+        else:
+            return False
 
 
 if __name__ == "__main__":

@@ -32,8 +32,6 @@ def about():
     ExchangeRateData().get_exch_rate_data()
     return render_template("about.html", about=True)
 
-
-
 @bp_web.route("/static/images/<path:filename>")
 def some_resource(filename):
     filename = os.path.join(bp_web.static_folder, "images", filename)
