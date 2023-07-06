@@ -104,7 +104,7 @@ GUINEA-BISSAU|CFA Franc BCEAO|XOF
 GUYANA|Guyana Dollar|GYD
 HAITI|Gourde|HTG
 HAITI|US Dollar|USD
-HEARD ISLAND AND McDONALD ISLANDS|Australian Dollar|AUD
+HEARD ISLAND AND MCDONALD ISLANDS|Australian Dollar|AUD
 HOLY SEE (THE)|Euro|EUR
 HONDURAS|Lempira|HNL
 HONG KONG|Hong Kong Dollar|HKD
@@ -268,16 +268,16 @@ WESTERN SAHARA|Moroccan Dirham|MAD
 YEMEN|Yemeni Rial|YER
 ZAMBIA|Zambian Kwacha|ZMW
 ZIMBABWE|Zimbabwe Dollar|ZWL
-ZZ01_Bond Markets Unit European_EURCO|Bond Markets Unit European Composite Unit (EURCO)|XBA
-ZZ02_Bond Markets Unit European_EMU-6|Bond Markets Unit European Monetary Unit (E.M.U.-6)|XBB
-ZZ03_Bond Markets Unit European_EUA-9|Bond Markets Unit European Unit of Account 9 (E.U.A.-9)|XBC
-ZZ04_Bond Markets Unit European_EUA-17|Bond Markets Unit European Unit of Account 17 (E.U.A.-17)|XBD
-ZZ06_Testing_Code|Codes specifically reserved for testing purposes|XTS
-ZZ07_No_Currency|The codes assigned for transactions where no currency is involved|XXX
-ZZ08_Gold|Gold|XAU
-ZZ09_Palladium|Palladium|XPD
-ZZ10_Platinum|Platinum|XPT
-ZZ11_Silver|Silver|XAG
+ZZ01_BOND MARKETS UNIT EUROPEAN_EURCO|Bond Markets Unit European Composite Unit (EURCO)|XBA
+ZZ02_BOND MARKETS UNIT EUROPEAN_EMU-6|Bond Markets Unit European Monetary Unit (E.M.U.-6)|XBB
+ZZ03_BOND MARKETS UNIT EUROPEAN_EUA-9|Bond Markets Unit European Unit of Account 9 (E.U.A.-9)|XBC
+ZZ04_BOND MARKETS UNIT EUROPEAN_EUA-17|Bond Markets Unit European Unit of Account 17 (E.U.A.-17)|XBD
+ZZ06_TESTING_CODE|Codes specifically reserved for testing purposes|XTS
+ZZ07_NO_CURRENCY|The codes assigned for transactions where no currency is involved|XXX
+ZZ08_GOLD|Gold|XAU
+ZZ09_PALLADIUM|Palladium|XPD
+ZZ10_PLATINUM|Platinum|XPT
+ZZ11_SILVER|Silver|XAG
 AFGHANISTAN|Afghani|AFA
 ÅLAND ISLANDS|Markka|FIM
 ALBANIA|Old Lek|ALK
@@ -437,6 +437,6 @@ ZIMBABWE|Zimbabwe Dollar (old)|ZWD
 ZIMBABWE|Zimbabwe Dollar|ZWD
 ZIMBABWE|Zimbabwe Dollar (new)|ZWN
 ZIMBABWE|Zimbabwe Dollar|ZWR
-ZZ01_Gold-Franc|Gold-Franc|XFO
-ZZ02_RINET Funds Code|RINET Funds Code|XRE
-ZZ05_UIC-Franc|UIC-Franc|XFU
+ZZ01_GOLD-FRANC|Gold-Franc|XFO
+ZZ02_RINET FUNDS CODE|RINET Funds Code|XRE
+ZZ05_UIC-FRANC|UIC-Franc|XFU

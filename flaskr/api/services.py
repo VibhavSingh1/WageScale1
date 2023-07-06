@@ -108,7 +108,10 @@ class PPPData:
         parsed_df["Date"] = parsed_df["Date"].astype("int")
 
         # Discarding Nan data and keeping only one record for every country with most recent date/year
-        filter1_df = parsed_df.loc[parsed_df["Value"].notna()]
+        filter1_df = parsed_df.loc[parsed_df["Value"].notna()].copy()
+
+        # Making the Country column values all cap
+        filter1_df["Country"] = filter1_df["Country"].str.upper()
 
         filter2_df = filter1_df.loc[
             filter1_df.groupby(by="Country")["Date"].idxmax()
@@ -262,10 +265,14 @@ class ExchangeRateData:
 
         return check_result
 
-    def get_exch_rate_data(self):
+    def get_exch_rate_data(self) -> bool:
         """Public method to call private method for exchange rate data
         generation
+
+        Returns:
+            bool: True if successfull else False
         """
+
         flag = self._get_exch_rate_data()
         if flag is False:
             return self._check_available_data()
@@ -316,12 +323,14 @@ class CurrencyData:
         parsed_df = self._parse_data(data=data)
         parsed_df = parsed_df[["Entity", "Currency", "AlphabeticCode"]]
         app.logger.info(
-            "Parsed the fetched data into dataframe with %s records", parsed_df.shape[0]
+            "Parsed the fetched data into dataframe with %s records",
+            parsed_df.shape[0],
         )
 
         self._save_currency_data(dataframe=parsed_df)
         app.logger.info(
-            "Currency data fetched, parsed and saved at %s", self.data_file_path
+            "Currency data fetched, parsed and saved at %s",
+            self.data_file_path,
         )
         app.logger.debug(
             "Top 10 data final currency data = \n%s",
@@ -362,6 +371,7 @@ class CurrencyData:
         """
 
         data_frame = pd.read_csv(io.BytesIO(data))
+        data_frame["Entity"] = data_frame["Entity"].str.upper()
 
         return data_frame
 
@@ -403,11 +413,11 @@ class GenerateData:
 
     def __init__(self) -> None:
         if not os.path.exists(constants.GENERATED_DATA_PATH):
-            os.makedirsO(constants.GENERATED_DATA_PATH)
+            os.makedirs(constants.GENERATED_DATA_PATH)
 
         self.final_merged_data_file_path = os.path.join(
             constants.GENERATED_DATA_PATH,
-            constants.FINAL_MERGED_DATA_FILE,
+            constants.FINAL_MERGED_DATA_FILE_NAME,
         )
 
         self.currency_file_path = os.path.join(
@@ -427,7 +437,9 @@ class GenerateData:
 
     def _generate_merged_final_data(self) -> bool:
         """Reads fetched data (if all available) and generate the required
-        final dataframe from the data
+        final dataframe from the data; if any required file isn't available
+        then checks if old merged data is available or not and if availble then
+        task is successful, else it's a critical error
 
         Returns:
             bool: True if final merged data generated successfully, else False
@@ -436,15 +448,25 @@ class GenerateData:
         # Check if the required fetched files exist
         exist = self._check_if_files_exist()
         if not exist:
-            app.logger.error("Required file/files are missing or unavailable")
+            app.logger.error(
+                "Required file/files are missing or unavailable, new final data can't be generated"
+            )
 
             if os.path.exists(self.final_merged_data_file_path):
-                app.logger.info("Old final data exists, will continue to use it for now")
+                app.logger.info(
+                    "Old final data exists, will continue to use it for now"
+                )
                 return True
             else:
+                app.logger.error(
+                    "No data available for the conversion module to use and \
+                        generation of new data failed!"
+                )
                 return False
-    
+
         # Data is available - Proceeding with final data generation
+
+        app.logger.info("Final Merged Data generation: Started")
         currency_file_df = pd.read_csv(
             self.currency_file_path,
             sep="|",
@@ -481,7 +503,7 @@ class GenerateData:
             how="inner",
         )
 
-        merge2.sort_values(by=["Country"])
+        merge2.sort_values(by=["Country"], inplace=True)
         app.logger.debug(
             "Top 10 data after second merge [merged1 and exchange rate data] =\n%s",
             merge2.head(10).to_string(index=False),
@@ -519,6 +541,17 @@ class GenerateData:
             sep="|",
             index=False,
         )
+
+    def generate_merged_final_data(self) -> bool:
+        """Public method to call the private generate_merged_final_data
+        method
+
+        Returns:
+            bool: True if generated sucessfully else False
+        """
+        flag = self._generate_merged_final_data()
+
+        return flag
 
 
 if __name__ == "__main__":

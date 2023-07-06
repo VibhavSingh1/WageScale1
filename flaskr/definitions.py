@@ -12,6 +12,7 @@ APP_LOG_FILE_NAME = "app.log"
 DATA_DIR_NAME = "data"
 FETCHED_DATA_NAME = "fetched"
 GENERATED_DATA_NAME = "generated"
+# DATABASE_DIR_NAME = 'databases'
 PPP_FILE_NAME = "ppp_data.csv"
 EXCH_RATE_FILE_NAME= "exchange_rates.csv"
 CURRENCY_FILE_NAME = "currencies.csv"
@@ -28,9 +29,10 @@ LOG_TODAY_DIR = os.path.join(ROOTDIR, LOG_DIR_NAME, TODAY)
 APP_LOG_FILE_PATH = os.path.join(LOG_TODAY_DIR, APP_LOG_FILE_NAME)
 FETCHED_DATA_PATH = os.path.join(ROOTDIR, DATA_DIR_NAME, FETCHED_DATA_NAME)
 GENERATED_DATA_PATH = os.path.join(ROOTDIR, DATA_DIR_NAME, GENERATED_DATA_NAME)
-
+# DATABASE_DIR_PATH = os.path.join(ROOTDIR, DATABASE_DIR_NAME)
 
 # Celery-related app config
+
 CELERY_BROKER_URL = 'amqp://localhost'
 CELERY_RESULT_BACKEND = 'rpc://' # old and deprecated soon
 CELERY_LOG_FILE_NAME = "celery.log"

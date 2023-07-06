@@ -1,6 +1,3 @@
-Pipfile
-Pipfile.lock
-
 *.pyc
 __pycache__/
 
@@ -11,4 +8,4 @@ instance/
 htmlcov/
 .vscode/
 
-flaskr/logs/*.log
+flaskr/logs/*
