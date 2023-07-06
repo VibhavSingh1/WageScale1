@@ -1,7 +1,12 @@
 .PHONY: all
 
 LOG_DIR := flaskr/logs/$(shell date +'%Y%m%d')
+DATA_DIR = flaskr/data
 CELERY_LOG_PATH = $(LOG_DIR)/celery.log
+CELERY_BEAT_SCHEDULE_PATH = $(DATA_DIR)/celery/celerybeat-schedule
+
+# DATABASES_DIR_PATH = flaskr/database
+# CELERY_BACKEND_DB = $(DATABASES_DIR_PATH)/celery_results.db
 
 update-sys:
 	# Upadating the system
@@ -44,8 +49,11 @@ check-rabbitmq:
 start-celery:
 	# Start celery worker
 	mkdir -p $(LOG_DIR)
+	mkdir -p $(DATA_DIR)/celery
+	rm -r $(CELERY_BEAT_SCHEDULE_PATH)
 	. venv/bin/activate && \
-	celery -A flaskr.celery_conf.celery_app worker --loglevel=info -E -f $(CELERY_LOG_PATH)
+	celery -A flaskr.celery_conf.celery_app worker --loglevel=info -E -f $(CELERY_LOG_PATH) \
+	--schedule=$(CELERY_BEAT_SCHEDULE_PATH) --beat
 
 stop-celery:
 	# Stop the celery worker
@@ -73,5 +81,3 @@ shut-app-services:
 	$(MAKE) stop-celery
 	sleep 5
 	$(MAKE) stop-rabbitmq
-
-

@@ -63,3 +63,32 @@
 2023-06-01 03:03:21 - amqp - DEBUG - Channel open
 2023-06-01 03:03:21 - flaskr - INFO - ppp data generation task done!
 2023-06-01 03:03:21 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2023 03:03:21] "GET /home HTTP/1.1" 200 -
+2023-06-01 15:47:28 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-01 15:47:28 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-01 15:47:28 - werkzeug - INFO -  * Restarting with stat
+2023-06-01 15:47:28 - werkzeug - WARNING -  * Debugger is active!
+2023-06-01 15:47:28 - werkzeug - INFO -  * Debugger PIN: 651-848-521
+2023-06-01 15:47:48 - flaskr - INFO - Starting the async execution of tasks
+2023-06-01 15:47:48 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-01 15:47:48 - amqp - DEBUG - using channel_id: 1
+2023-06-01 15:47:48 - amqp - DEBUG - Channel open
+2023-06-01 15:47:48 - flaskr - INFO - ppp data generation task done!
+2023-06-01 15:47:48 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2023 15:47:48] "GET / HTTP/1.1" 200 -
+2023-06-01 15:47:48 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2023 15:47:48] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-06-01 15:47:49 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2023 15:47:49] "[36mGET /static/images/background1.jpg HTTP/1.1[0m" 304 -
+2023-06-01 15:47:50 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2023 15:47:50] "GET /static/images/favicon1.ico HTTP/1.1" 200 -
+2023-06-01 15:47:57 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2023 15:47:57] "GET / HTTP/1.1" 200 -
+2023-06-01 15:47:57 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2023 15:47:57] "GET /static/images/headerbg.jpg HTTP/1.1" 200 -
+2023-06-01 15:51:27 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-01 15:51:27 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-01 15:51:27 - werkzeug - INFO -  * Restarting with stat
+2023-06-01 15:51:28 - werkzeug - WARNING -  * Debugger is active!
+2023-06-01 15:51:28 - werkzeug - INFO -  * Debugger PIN: 651-848-521
+2023-06-01 15:51:38 - flaskr - INFO - Starting the async execution of tasks
+2023-06-01 15:51:38 - amqp - DEBUG - Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@Thunder-Drive', 'copyright': 'Copyright (c) 2007-2019 Pivotal Software, Inc.', 'information': 'Licensed under the MPL 1.1. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 22.2.7', 'product': 'RabbitMQ', 'version': '3.8.2'}, mechanisms: [b'AMQPLAIN', b'PLAIN'], locales: ['en_US']
+2023-06-01 15:51:38 - amqp - DEBUG - using channel_id: 1
+2023-06-01 15:51:38 - amqp - DEBUG - Channel open
+2023-06-01 15:51:38 - flaskr - INFO - ppp data generation task done!
+2023-06-01 15:51:38 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2023 15:51:38] "GET / HTTP/1.1" 200 -

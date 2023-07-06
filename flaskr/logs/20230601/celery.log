@@ -97,3 +97,35 @@ billiard.exceptions.WorkerLostError: Worker exited prematurely: signal 15 (SIGTE
    240             Austria  2022   0.718930
 [2023-06-01 03:03:24,370: INFO/ForkPoolWorker-6] PPP data fetched, parsed and saved in data directory
 [2023-06-01 03:03:24,372: INFO/ForkPoolWorker-6] Task flaskr.tasks.work_PPP_gen[e949f262-50f9-48e3-aea2-605bb30dcaf7] succeeded in 2.5908530029992107s: None
+[2023-06-01 15:46:51,005: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2023-06-01 15:46:51,008: INFO/MainProcess] mingle: searching for neighbors
+[2023-06-01 15:46:52,165: INFO/MainProcess] mingle: all alone
+[2023-06-01 15:46:52,175: INFO/MainProcess] celery@Thunder-Drive ready.
+[2023-06-01 15:47:48,555: INFO/MainProcess] Task flaskr.tasks.work_PPP_gen[8a34bf26-358d-437a-8132-6c906e1aee31] received
+[2023-06-01 15:47:48,562: INFO/ForkPoolWorker-6] Fetching the PPP data from World Bank API: Started
+[2023-06-01 15:47:48,562: INFO/ForkPoolWorker-6] Started Requesting the data from World Bank API Endpoint
+[2023-06-01 15:47:49,717: INFO/ForkPoolWorker-6] Started Requesting the data from World Bank API Endpoint
+[2023-06-01 15:47:50,725: INFO/ForkPoolWorker-6] Started Requesting the data from World Bank API Endpoint
+[2023-06-01 15:47:51,732: INFO/ForkPoolWorker-6] Started Requesting the data from World Bank API Endpoint
+[2023-06-01 15:47:52,739: INFO/ForkPoolWorker-6] Started Requesting the data from World Bank API Endpoint
+[2023-06-01 15:47:52,746: ERROR/ForkPoolWorker-6] HTTPSConnectionPool(host='api.worldbank.org', port=443): Max retries exceeded with url: /v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=10000&date=2019%3A2022 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f01154720a0>: Failed to resolve 'api.worldbank.org' ([Errno -3] Temporary failure in name resolution)"))
+[2023-06-01 15:47:52,748: INFO/ForkPoolWorker-6] Task flaskr.tasks.work_PPP_gen[8a34bf26-358d-437a-8132-6c906e1aee31] succeeded in 4.192036875999975s: None
+[2023-06-01 15:51:38,080: INFO/MainProcess] Task flaskr.tasks.work_PPP_gen[e05c1612-3348-4233-880f-14f5e130d5c8] received
+[2023-06-01 15:51:38,081: INFO/ForkPoolWorker-6] Fetching the PPP data from World Bank API: Started
+[2023-06-01 15:51:38,081: INFO/ForkPoolWorker-6] Started Requesting the data from World Bank API Endpoint
+[2023-06-01 15:51:40,614: INFO/ForkPoolWorker-6] Data fetched successfully from World Bank API
+[2023-06-01 15:51:40,860: INFO/ForkPoolWorker-6] Data parsed and filtered into a DataFrame
+[2023-06-01 15:51:40,868: DEBUG/ForkPoolWorker-6] Top 10 data from the fetched PPP data = 
+ index             Country  Date      Value
+   197         Afghanistan  2021  18.456537
+   201             Albania  2021  42.501873
+   205             Algeria  2021  41.100028
+   217              Angola  2021 204.060575
+   221 Antigua and Barbuda  2021   2.028070
+   225           Argentina  2021  42.720786
+   229             Armenia  2021 160.460639
+   233               Aruba  2021   1.230079
+   236           Australia  2022   1.446332
+   240             Austria  2022   0.718930
+[2023-06-01 15:51:40,868: INFO/ForkPoolWorker-6] PPP data fetched, parsed and saved in data directory
+[2023-06-01 15:51:40,869: INFO/ForkPoolWorker-6] Task flaskr.tasks.work_PPP_gen[e05c1612-3348-4233-880f-14f5e130d5c8] succeeded in 2.7879947680000896s: None
