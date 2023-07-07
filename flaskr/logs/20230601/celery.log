@@ -128,4 +128,8 @@ billiard.exceptions.WorkerLostError: Worker exited prematurely: signal 15 (SIGTE
    236           Australia  2022   1.446332
    240             Austria  2022   0.718930
 [2023-06-01 15:51:40,868: INFO/ForkPoolWorker-6] PPP data fetched, parsed and saved in data directory
+<<<<<<< HEAD
 [2023-06-01 15:51:40,869: INFO/ForkPoolWorker-6] Task flaskr.tasks.work_PPP_gen[e05c1612-3348-4233-880f-14f5e130d5c8] succeeded in 2.7879947680000896s: None
+=======
+[2023-06-01 15:51:40,869: INFO/ForkPoolWorker-6] Task flaskr.tasks.work_PPP_gen[e05c1612-3348-4233-880f-14f5e130d5c8] succeeded in 2.7879947680000896s: None
+>>>>>>> ebc4d786ade6e1464c5702f653855d9c56f613ba
