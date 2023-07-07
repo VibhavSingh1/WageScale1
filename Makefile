@@ -50,7 +50,7 @@ start-celery:
 	# Start celery worker
 	mkdir -p $(LOG_DIR)
 	mkdir -p $(DATA_DIR)/celery
-	rm -r $(CELERY_BEAT_SCHEDULE_PATH)
+	rm -rf $(CELERY_BEAT_SCHEDULE_PATH)
 	. venv/bin/activate && \
 	celery -A flaskr.celery_conf.celery_app worker --loglevel=info -E -f $(CELERY_LOG_PATH) \
 	--schedule=$(CELERY_BEAT_SCHEDULE_PATH) --beat
