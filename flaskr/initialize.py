@@ -1,11 +1,8 @@
 from flaskr import app
-from flaskr.tasks import work_PPP_gen
+from flaskr.tasks import task_flow_ConversionModuleData
 
 def app_startup():
     """Gets executed before flask app starts serving any requests
     """
     app.logger.info("Starting the async execution of tasks")
-    work_PPP_gen.apply_async()
-    app.logger.info("ppp data generation task done!")
-
-
+    task_flow_ConversionModuleData.apply_async()
