@@ -10,3 +10,5 @@ htmlcov/
 
 flaskr/logs/*
 flaskr/data/*
+
+venv/
